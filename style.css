@@ -2,10 +2,7 @@ body{
   display: grid;
   grid-template-columns: 15% 85%;
   margin: 0;
-/*  grid-template-areas:
-  "sidemenu main";*/
-/*  grid-template-columns: 15% 85%;
-*/}
+}
 
 .side-menu {
   grid-column: 1;
@@ -19,35 +16,34 @@ body{
 }
 
 .main-nested{
+  height: 100vh;
   display: grid;
+/*  grid-template-rows: 1fr 2fr 2fr 4fr;
+*/  grid-auto-rows: 10% 20% 30% 40%;
   grid-template-areas:
   "searchmenu" 
   "jobdescript" 
   "graphsection"
-   "maincontent";
+  "maincontent";
   background-color: pink;
-/*  grid-column: 1;
-*//*  grid-template-rows: 5% 10% 25% 60%;
-*/
+
 }
 
 .search-menu {
+
   grid-area: searchmenu;
   background-color: purple;
-/*  grid-row: 1;
-*/}
+}
 
 .job-description{
   grid-area: jobdescript;
   background-color: red;
-/*  grid-row: 2;
-*/}
+}
 
 .graph-section{
   grid-area: graphsection;
   background-color: yellow;
-/*  grid-row: 3;
-*/}
+}
 
 .main-content{
   grid-area: maincontent;
