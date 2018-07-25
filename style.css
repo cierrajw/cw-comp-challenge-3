@@ -1,0 +1,55 @@
+body{
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin: 0;
+/*  grid-template-areas:
+  "sidemenu main";*/
+/*  grid-template-columns: 15% 85%;
+*/}
+
+.side-menu {
+  grid-column: 1;
+  background-color: blue;
+  height: 100vh;
+}
+
+.main-section{
+  grid-column: 2;
+  background-color: orange;
+}
+
+.main-nested{
+  display: grid;
+  grid-template-areas:
+  "searchmenu" 
+  "jobdescript" 
+  "graphsection"
+   "maincontent";
+  background-color: pink;
+/*  grid-column: 1;
+*//*  grid-template-rows: 5% 10% 25% 60%;
+*/
+}
+
+.search-menu {
+  grid-area: searchmenu;
+  background-color: purple;
+/*  grid-row: 1;
+*/}
+
+.job-description{
+  grid-area: jobdescript;
+  background-color: red;
+/*  grid-row: 2;
+*/}
+
+.graph-section{
+  grid-area: graphsection;
+  background-color: yellow;
+/*  grid-row: 3;
+*/}
+
+.main-content{
+  grid-area: maincontent;
+  background-color: brown;
+}
