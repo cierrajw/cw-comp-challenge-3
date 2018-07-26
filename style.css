@@ -89,10 +89,15 @@ body{
 
 .search-menu {
   display: grid;
-  grid-template-columns: .4fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: .3fr 3fr .3fr .3fr .3fr;
   grid-area: searchmenu;
   height: 50px;
 }
+
+/*.the-search-bar{
+  height: 100%
+  width: 100%
+}*/
 
 .flex-center-search-items{
   display: flex;
@@ -107,6 +112,14 @@ body{
 
 .search-bar{
   grid-column: 2;
+
+}
+
+.search-bar input{
+  grid-column: 2;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .search-button{
