@@ -10,22 +10,35 @@ body{
 /*<--------------------------------Side menu---------------------------------->*/
 
 .side-menu {
-  display: grid;
-/*  grid-auto-rows: 1fr 2fr 2fr 2fr;
-*/  
+  display: grid; 
   grid-auto-rows: 15% 15% 25% 40%;
-grid-column: 1;
+  grid-column: 1;
   background-color: #354052;
 }
 
+.side-menu-icons {
+  color: #e3e7ed;
+}
+
+.side-menu-text{
+
+  color: #e3e7ed;
+}
+
+.side-menu-header-text{
+  color: #e3e7ed;
+  font-size: small;
+}
+
 .profile-img-section{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 3em;
   grid-row: 1;
   border-bottom: 1px solid black;
   font-size: small;
-  color: grey;
+  color: #e3e7ed;
 }
 
 .profile-img-section img{
@@ -35,9 +48,9 @@ grid-column: 1;
 }
 
 .main-menu-section{
-/*  background-color: red;
-*/grid-row: 2;
+  grid-row: 2;
   border-bottom: 1px solid black;
+  align-content: space-between;
 }
 
 .admin-section{
@@ -72,10 +85,46 @@ grid-column: 1;
 
 }
 
+/*<--------------------------------Top Search Bar---------------------------------->*/
+
 .search-menu {
+  display: grid;
+  grid-template-columns: .4fr 3fr 1fr 1fr 1fr;
   grid-area: searchmenu;
-  background-color: purple;
+  height: 50px;
 }
+
+.flex-center-search-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-hamburger{
+  grid-column: 1;
+  background-color: red;
+}
+
+.search-bar{
+  grid-column: 2;
+}
+
+.search-button{
+  background-color: orange;
+  grid-column: 3;
+}
+
+.search-calendar{
+  background-color: blue;
+  grid-column: 4;
+}
+
+.search-options{
+  background-color: green;
+  grid-column: 5;
+}
+
+/*<--------------------------------Nested Area---------------------------------->*/
 
 .job-description{
   grid-area: jobdescript;
