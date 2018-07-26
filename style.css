@@ -65,7 +65,7 @@ body{
   border-bottom: 1px solid black;
 }
 
-/*<--------------------------------Main/Nested Sections---------------------------------->*/
+/*<--------------------------------Main/Nested Section Graph Layout---------------------------------->*/
 
 .main-section{
   grid-column: 2;
@@ -106,14 +106,12 @@ body{
 
 .search-bar{
   grid-column: 2;
-
 }
 
 .search-bar input{
   grid-column: 2;
   height: 100%;
   width: 100%;
-  
 }
 
 .search-button{
@@ -131,7 +129,10 @@ body{
   grid-column: 5;
 }
 
-/*<--------------------------------Nested Area---------------------------------->*/
+                          /*<--------------------------Nested Area-------------------------->*/
+
+
+/*<----------------------------Job Description/Header------------------------------>*/
 
 .job-description{
   grid-area: jobdescript;
@@ -156,10 +157,14 @@ body{
   display: inline;
 }
 
+/*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
   background-color: yellow;
+  margin-left: 3em;
 }
+
+/*<--------------------------------Main Content---------------------------------->*/
 
 .main-content{
   grid-area: maincontent;
@@ -170,11 +175,26 @@ body{
   margin-top: 30px;
 }
 
+/*<--------------------------------Job Card---------------------------------->*/
+
 .job-card{
   grid-column: 1;
+  display: flex;
+  flex-direction: column;
   background-color: blue;
-  margin-left: 40px
+  margin-left: 3em;
 }
+
+.job-card-header{
+  background-color: pink;
+}
+
+.job-card-body{
+
+  background-color: orange;
+}
+
+/*<--------------------------------Media Aside---------------------------------->*/
 
 .media-aside{
   grid-column: 2;
