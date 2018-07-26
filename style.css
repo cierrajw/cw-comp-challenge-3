@@ -1,25 +1,67 @@
 body{
-  display: grid;
-  grid-template-columns: 15% 85%;
   margin: 0;
 }
 
+.content-section{
+  display: grid;
+  grid-auto-columns: .7fr 3.7fr;
+}
+
+/*<--------------------------------Side menu---------------------------------->*/
+
 .side-menu {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 3fr;
   grid-column: 1;
-  background-color: blue;
+  background-color: #354052;
   height: 100vh;
 }
 
+.profile-img-section{
+  display: grid;
+  justify-content: center;
+  padding: 3em;
+  grid-row: 1;
+  border-bottom: 1px solid black;
+  font-size: small;
+  color: grey;
+}
+
+.profile-img-section img{
+  border-radius: 50% 50%;
+  height: 160px;
+  width: 150px;
+}
+
+.main-menu-section{
+/*  background-color: red;
+*/grid-row: 2;
+  border-bottom: 1px solid black;
+}
+
+.admin-section{
+/*  background-color: orange;
+*/grid-row: 3;
+  border-bottom: 1px solid black;
+}
+
+.categories-section{
+/*  background-color: green;
+*/grid-row: 4;
+  border-bottom: 1px solid black;
+}
+
+/*<--------------------------------Main/Nested Sections---------------------------------->*/
+
 .main-section{
   grid-column: 2;
-  background-color: orange;
-}
+/*  background-color: orange;
+*/}
 
 .main-nested{
   height: 100vh;
   display: grid;
-/*  grid-template-rows: 1fr 2fr 2fr 4fr;
-*/  grid-auto-rows: 10% 20% 30% 40%;
+  grid-auto-rows: 10% 20% 30% 40%;
   grid-template-areas:
   "searchmenu" 
   "jobdescript" 
@@ -49,3 +91,5 @@ body{
   grid-area: maincontent;
   background-color: brown;
 }
+
+/*<--------------------------------Media Queries---------------------------------->*/
