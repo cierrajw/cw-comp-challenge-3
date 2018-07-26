@@ -11,10 +11,11 @@ body{
 
 .side-menu {
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr 3fr;
-  grid-column: 1;
+/*  grid-auto-rows: 1fr 2fr 2fr 2fr;
+*/  
+  grid-auto-rows: 15% 15% 25% 40%;
+grid-column: 1;
   background-color: #354052;
-  height: 100vh;
 }
 
 .profile-img-section{
@@ -59,8 +60,8 @@ body{
 */}
 
 .main-nested{
-  height: 100vh;
-  display: grid;
+/*  height: 100%;
+*/  display: grid;
   grid-auto-rows: 10% 20% 30% 40%;
   grid-template-areas:
   "searchmenu" 
@@ -72,7 +73,6 @@ body{
 }
 
 .search-menu {
-
   grid-area: searchmenu;
   background-color: purple;
 }
