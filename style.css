@@ -7,6 +7,12 @@ body{
   grid-template-columns: 200px 4fr;
 }
 
+canvas{
+  border: 1px solid orange;
+  width: 400px;
+  height: 200px;
+}
+
 /*<--------------------------------Side menu---------------------------------->*/
 
 .side-menu {
@@ -168,8 +174,8 @@ body{
 /*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
-  background-color: yellow;
-  margin-left: 3em;
+/*  background-color: yellow;
+*/  margin-left: 3em;
   margin-right: 40px;
 }
 
