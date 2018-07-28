@@ -22,7 +22,7 @@ body{
 
 .side-menu {
   display: grid; 
-  grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: 15% 20% 20% 45%;
   grid-column: 1;
   background-color: #354052;
 }
@@ -50,39 +50,47 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-/*  padding-left: 2.4em;
-  padding-right: 2em;
-  padding-top: 2em;*/
   padding: 3em 2em 3em 2em;
   grid-row: 1;
-  height: 65%;
+  height: 49%;
   border-bottom: 1px solid #1d1e1e;
   font-size: small;
   color: #e3e7ed;
+  font-family: 'Karla', sans-serif;
+  position: relative;
 }
 
 .profile-img-section img{
+  position: relative;
+  top: 9px;
+  left: 23px;
   border-radius: 50% 50%;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
+}
+
+.profile-name{
+  position: relative;
+  top: 8px;
+  left: 7px;
 }
 
 .main-menu-section{
   grid-row: 2;
   display: flex;
-  height: 90%;
+  height: 95%;
   flex-direction: column;
+  align-self: flex-start;
   align-items: space-between;
   border-bottom: 1px solid #1d1e1e;
-/*  box-shadow: 3px 3px 5px 6px #ccc;
-*/  }
+  }
 
 .admin-section{
   grid-row: 3;
   align-self: start;
   border-bottom: 1px solid #1d1e1e;
   display: flex;
-  height: 88%;
+  height: 95%;
   flex-direction: column;
   align-items: space-between;
   padding-top: 0;
@@ -201,14 +209,16 @@ body{
 .job-description{
   grid-area: jobdescript;
   background-color: #ffffff;
-  border-bottom: .5px solid #c6c9ce;;
+  border-bottom: .5px solid #c6c9ce;
+  font-family: 'Karla', sans-serif;
+  height: 125%;
 }
 
 .grid-title-section{
   display: flex;
   width: 800px;
   justify-content: space-around;
-  padding-left: 3em;
+  padding-left: 2em;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -222,12 +232,25 @@ body{
 
 .job-description-options{
   display: inline;
-  padding-left: 30em;
+  padding-left: 28em;
   }
 
 .job-description-options i{
   padding-left: 1em;
   }
+
+  .open-button{
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .open-bullet{
+    color: #86c338;
+    font-size: large;
+  }
+
 /*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
@@ -278,6 +301,11 @@ body{
 .job-card-body{
   font-family: 'Karla', sans-serif;
   background-color: #ffffff;
+}
+
+.job-card-body h5{
+  color: #6f7e95;
+  font-weight: bold;
 }
 
 .job-card-div{
