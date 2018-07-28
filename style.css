@@ -29,10 +29,12 @@ body{
 
 .side-menu-icons {
   color: #e3e7ed;
+  padding-right: 1em;
+  width: 12px;
 }
 
 .side-menu-text{
-
+  display: flex;
   color: #e3e7ed;
   font-size: small;
   margin-left: 1em;
@@ -52,7 +54,7 @@ body{
   justify-content: center;
   padding: 3em 2em 3em 2em;
   grid-row: 1;
-  height: 49%;
+  height: 51%;
   border-bottom: 1px solid #1d1e1e;
   font-size: small;
   color: #e3e7ed;
@@ -65,7 +67,7 @@ body{
   top: 9px;
   left: 23px;
   border-radius: 50% 50%;
-  height: 100px;
+  height: 105px;
   width: 100px;
 }
 
@@ -216,6 +218,8 @@ body{
 
 .grid-title-section{
   display: flex;
+  position: relative;
+  top: 40px;
   width: 800px;
   justify-content: space-around;
   padding-left: 2em;
@@ -251,6 +255,15 @@ body{
     font-size: large;
   }
 
+  .section-hover{
+    width: 70px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #13a1f5;
+    position: relative;
+    top: 45px;
+    left: 3.2em;
+  }
 /*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
