@@ -7,17 +7,22 @@ body{
   grid-template-columns: 200px 4fr;
 }
 
-canvas{
-  border: 1px solid orange;
-  width: 400px;
+#bargraph{
+  display: grid;
+  border: 1px solid blue;
+  width: 450px;
   height: 200px;
 }
+
+#circlegraph{
+}
+
 
 /*<--------------------------------Side menu---------------------------------->*/
 
 .side-menu {
   display: grid; 
-  grid-auto-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-column: 1;
   background-color: #354052;
 }
@@ -30,54 +35,86 @@ canvas{
 
   color: #e3e7ed;
   font-size: small;
+  margin-left: 1em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .side-menu-header-text{
   color: #e3e7ed;
-  font-size: small;
+  font-size: x-small;
+  margin-left: 1em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .profile-img-section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3em;
+/*  padding-left: 2.4em;
+  padding-right: 2em;
+  padding-top: 2em;*/
+  padding: 3em 2em 3em 2em;
   grid-row: 1;
-  border-bottom: 1px solid black;
+  height: 65%;
+  border-bottom: 1px solid #1d1e1e;
   font-size: small;
   color: #e3e7ed;
 }
 
 .profile-img-section img{
   border-radius: 50% 50%;
-  height: 160px;
-  width: 140px;
+  height: 150px;
+  width: 150px;
 }
 
 .main-menu-section{
   grid-row: 2;
-  border-bottom: 1px solid black;
-  align-content: space-between;
-}
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  align-items: space-between;
+  border-bottom: 1px solid #1d1e1e;
+/*  box-shadow: 3px 3px 5px 6px #ccc;
+*/  }
 
 .admin-section{
-/*  background-color: orange;
-*/grid-row: 3;
-  border-bottom: 1px solid black;
+  grid-row: 3;
+  align-self: start;
+  border-bottom: 1px solid #1d1e1e;
+  display: flex;
+  height: 88%;
+  flex-direction: column;
+  align-items: space-between;
+  padding-top: 0;
 }
 
 .categories-section{
-/*  background-color: green;
-*/grid-row: 4;
-  border-bottom: 1px solid black;
+  grid-row: 4;
+  border-bottom: 1px solid #1d1e1e;
+  display: flex;
+  flex-direction: column;
+  }
+
+.fa-check-square{
+  color: yellow;
 }
 
+.square2{
+  color: blue;
+}
+
+.square3{
+  color: red;
+}
+
+.square4{
+  color: green;
+}
 /*<--------------------------------Main/Nested Section Graph Layout---------------------------------->*/
 
 .main-section{
   grid-column: 2;
-/*  background-color: orange;
-*/}
+}
 
 .main-nested{
   display: grid;
@@ -88,8 +125,7 @@ canvas{
   "graphsection"
   "maincontent";
   background-color: #edf2f6;
-/*  height: 100vh;
-*/}
+  }
 
 /*<--------------------------------Top Search Bar---------------------------------->*/
 
@@ -98,7 +134,7 @@ canvas{
   grid-template-columns: .3fr 3fr .3fr .3fr .3fr;
   grid-area: searchmenu;
   height: 50px;
-  border-bottom: .5px solid black;
+  border-bottom: .5px solid #c6c9ce;
 }
 
 .flex-center-search-items{
@@ -110,32 +146,35 @@ canvas{
 .search-hamburger{
   grid-column: 1;
   background-color: #ffffff;
-  border-right: .5px solid black;
+  border-right: .5px solid #c6c9ce;
 }
 
 .search-bar{
   grid-column: 2;
-  border-bottom: .5px solid black;
+  border-bottom: .5px solid #c6c9ce;
 }
 
 .search-bar input{
   grid-column: 2;
-  height: 89%;
+  height: 90%;
   width: 100%;
 }
 
 .search-button{
   grid-column: 3;
   background-color: #ffffff;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
+  border-left: .5px solid #c6c9ce;
+  border-right: .5px solid #c6c9ce;
+}
 
+.button-hover:hover{
+  background-color: #13a1f5;
 }
 
 .search-calendar{
   grid-column: 4;
   background-color: #ffffff;
-  border-right: .5px solid black;
+  border-right: .5px solid #c6c9ce;
 
 }
 
@@ -143,6 +182,15 @@ canvas{
   grid-column: 5;
   background-color: #ffffff;
 
+}
+
+.fa-caret-left{
+  color: #13a1f5;
+  margin-right: .1em;
+}
+
+.fa-bars{
+  color: grey;
 }
 
                           /*<--------------------------Nested Area-------------------------->*/
@@ -153,14 +201,15 @@ canvas{
 .job-description{
   grid-area: jobdescript;
   background-color: #ffffff;
-  border-bottom: .5px solid grey;
+  border-bottom: .5px solid #c6c9ce;;
 }
 
 .grid-title-section{
   display: flex;
-  width: 700px;
+  width: 800px;
   justify-content: space-around;
   padding-left: 3em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .job-header{
@@ -171,11 +220,18 @@ canvas{
   display: inline;
 }
 
+.job-description-options{
+  display: inline;
+  padding-left: 30em;
+  }
+
+.job-description-options i{
+  padding-left: 1em;
+  }
 /*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
-/*  background-color: yellow;
-*/  margin-left: 3em;
+  margin-left: 3em;
   margin-right: 40px;
 }
 
@@ -198,6 +254,7 @@ canvas{
   flex-direction: column;
   background-color: blue;
   margin-left: 3em;
+  margin-bottom: 3em;
 }
 
 .job-card-header{
@@ -205,6 +262,8 @@ canvas{
   align-items: center;
   background-color: #6f7e95;
   color: #e3e7ed;;
+  padding-left: 2em;
+  font-family: 'Karla', sans-serif;
 }
 
 .edit-job-button{
@@ -212,33 +271,56 @@ canvas{
   padding: .5em;
   width: 50px;
   height: 20px;
-/*  opacity: .8;
-*/  color: #e3e7ed;
+  margin-left: 1em;
+  color: #e3e7ed;
 }
 
 .job-card-body{
-
+  font-family: 'Karla', sans-serif;
   background-color: #ffffff;
 }
 
 .job-card-div{
   display: flex;
   align-items: center;
-/*  width: 300px;
-  justify-content: space-between;*/
 }
 
 .job-card-div h5{
   width: 150px;
   margin: 2em 2em 2em 2em;
-/*  margin-right: 2em;
-*/}
+  }
 
 .job-card-div p{
   margin: 2em 0 2em 0;
   display: flex;
-/*  margin-right: 2em;
-*/}
+  }
+
+/*.hrdiv1{
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+.hrdiv2{
+  display: flex;
+  align-content: center;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+
+.hrsection{
+  width: 800px;
+  display: flex;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.hrsection i{
+  border: 1px solid black;
+  border-radius: 50% 50%;
+  margin-top: 2em;
+}*/
+
 /*<--------------------------------Media Aside---------------------------------->*/
 
 .media-aside{
@@ -265,6 +347,12 @@ canvas{
   margin-bottom: 1em;
 }
 
+.media-aside-section{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
 .copy-button{
   background-color: #42b8ba;
   border-radius: 0px 4px 4px 0px;
@@ -283,11 +371,11 @@ canvas{
 }
 
 .link-to-job{
-  border-bottom: .5px solid black;
+  border-bottom: .5px solid #c6c9ce;;
 }
 
 .button-widget{
-  border-bottom: .5px solid black;
+  border-bottom: .5px solid #c6c9ce;;
 }
 
 .upload-resume input{

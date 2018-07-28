@@ -7,6 +7,10 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
 </head>
 <body>
 
@@ -33,7 +37,9 @@
   </section>
 
   <section role="admin" class="admin-section">
-    <h3 class="side-menu-header-text"><i class="fas fa-users side-menu-icons"></i> USERS</h3>
+    <h3 class="side-menu-header-text">Admin</h3>
+
+    <p class="side-menu-text"><i class="fas fa-users side-menu-icons"></i>USERS</p>
     <p class="side-menu-text"><i class="fas fa-thumbtack side-menu-icons"></i> LOCATIONS</p>
     <p class="side-menu-text"><i class="fas fa-briefcase side-menu-icons"></i> WORKFLOWS</p>
     <p class="side-menu-text"><i class="fas fa-chalkboard side-menu-icons"></i> JOB BOARDS</p>
@@ -43,9 +49,9 @@
   <section role="categories" class="categories-section">
   <h3 class="side-menu-header-text">Categories</h3>
   <p class="side-menu-text"><i class="fas fa-check-square"></i> Administrative</p>
-  <p class="side-menu-text"><i class="fas fa-square"></i> Design</p>
-  <p class="side-menu-text"><i class="fas fa-square"></i> Executive</p>
-  <p class="side-menu-text"><i class="fas fa-square"></i> Human Resources</p>
+  <p class="side-menu-text"><i class="fas fa-square square2"></i> Design</p>
+  <p class="side-menu-text"><i class="fas fa-square square3"></i> Executive</p>
+  <p class="side-menu-text"><i class="fas fa-square square4"></i> Human Resources</p>
   </section>
 
 </aside>
@@ -56,22 +62,23 @@
 <main role="main-section" class="main-section">
 
   <container role="main-content" class="main-nested">
+
+    <!----------------------------------Search bar-------------------------------->
   
     <header class="search-menu">
-      <section class="search-hamburger flex-center-search-items"><i class="fas fa-caret-left"></i> <i class="fas fa-bars"></i>
+      <section class="search-hamburger flex-center-search-items button-hover"><i class="fas fa-caret-left"></i> <i class="fas fa-bars"></i>
       </section>
 
-      <!----------------------------------Search bar-------------------------------->
 
       <section role="search" class="search-bar">
         <input aria-label="search-bar" class="the-search-bar" type="text" name="SearchMenu">
       </section>
 
-      <section class="search-button flex-center-search-items"><i class="fas fa-user-plus"></i></section>
+      <section class="search-button flex-center-search-items button-hover"><i class="fas fa-user-plus"></i></section>
 
-      <section class="search-calendar flex-center-search-items"><i class="far fa-calendar-plus"></i></section>
+      <section class="search-calendar flex-center-search-items button-hover"><i class="far fa-calendar-plus"></i></section>
 
-      <section class="search-options flex-center-search-items"><i class="fas fa-th"></i></section>
+      <section class="search-options flex-center-search-items button-hover"><i class="fas fa-th"></i></section>
 
 
     </header>
@@ -80,9 +87,17 @@
     <container role="job-description" class="job-description">
 
       <section class="job-header">
-        <h3>Customer Service Representative</h3>
+        <h3>Front-End Software Developer</h3>
         <h4 class="job-sub-header"><i class="fas fa-map-marker-alt"></i> San Fransisco, CA</h4>
         <h4 class="job-sub-header">&bull; Preview this post</h4>
+
+        <div class="job-description-options">
+        <button>Open</button>
+        <i class="fas fa-bookmark"></i>
+        <i class="far fa-edit"></i>
+        <i class="fas fa-trash-alt"></i>
+        </div>
+
       </section>
     
 
@@ -98,17 +113,27 @@
 
       </section>
 
+
+
     </container>
 
     <!----------------------------------Canvas-------------------------------->
 
     <section role="graph-section" class="graph-section">
 
+      <canvas id="circlegraph" height="200" width="300">
       <canvas id="bargraph" height="200" width="300">
 
+        
     </section>
 
+<!-- 
+<section class="hrsection"><div class="hrdiv1"></div><i class="fas fa-angle-up"></i><div class="hrdiv2"></div></section> -->
+
     <main class="main-content">
+
+
+
 
 <!----------------------------------Job card -------------------------------->
       <article role="job-card" class="job-card">
@@ -168,14 +193,14 @@
 
         </section>
 
-        <section role="link-to-job" class="link-to-job">
+        <section role="link-to-job" class="link-to-job media-aside-section">
           <h6>Link to this job</h6>
           <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
           <div class="copy-link"><input aria-label="copy-link"type="text" name="" value="https://www.google.com/forkthisrepository">
           <button aria-label="copy" class="copy-button">Copy</button></div>
         </section>
 
-        <section role="widget" class="button-widget">
+        <section role="widget" class="button-widget media-aside-section">
 
           <h6>Use the button widget</h6>
           <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
@@ -183,7 +208,7 @@
           <button aria-label="copy" class="copy-button">Copy</button></div>
         </section>
 
-        <section role="upload-resume" class="upload-resume">
+        <section role="upload-resume" class="upload-resume media-aside-section">
 
           <h6>Upload Resumes by Email</h6>
           <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
