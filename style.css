@@ -4,7 +4,7 @@ body{
 
 .content-section{
   display: grid;
-  grid-template-columns: 200px 4fr;
+  grid-template-columns: 170px 4fr;
 }
 
 #bargraph{
@@ -43,17 +43,18 @@ body{
 
 .side-menu-header-text{
   color: #e3e7ed;
-  font-size: x-small;
+  font-size: .7em;
   margin-left: 1em;
   font-family: 'Roboto', sans-serif;
+  opacity: 0.6;
 }
 
 .profile-img-section{
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3em 2em 3em 2em;
-  grid-row: 1;
+  padding: 4em 2em 3em .8em;
   height: 51%;
   border-bottom: 1px solid #1d1e1e;
   font-size: small;
@@ -64,17 +65,19 @@ body{
 
 .profile-img-section img{
   position: relative;
-  top: 9px;
+  top: -7px;
   left: 23px;
   border-radius: 50% 50%;
+  border: 1px solid #16243a;
   height: 105px;
   width: 100px;
 }
 
 .profile-name{
   position: relative;
-  top: 8px;
-  left: 7px;
+  top: -3px;
+  left: 14px;
+  font-size: small;
 }
 
 .main-menu-section{
@@ -128,7 +131,7 @@ body{
 
 .main-nested{
   display: grid;
-  grid-auto-rows: 10% 20% 30% 40%;
+  grid-auto-rows: 18% 20% 27% 35%;
   grid-template-areas:
   "searchmenu" 
   "jobdescript" 
@@ -143,7 +146,7 @@ body{
   display: grid;
   grid-template-columns: .3fr 3fr .3fr .3fr .3fr;
   grid-area: searchmenu;
-  height: 50px;
+  height: 65px;
   border-bottom: .5px solid #c6c9ce;
 }
 
@@ -166,7 +169,7 @@ body{
 
 .search-bar input{
   grid-column: 2;
-  height: 90%;
+  height: 93%;
   width: 100%;
 }
 
@@ -179,6 +182,10 @@ body{
 
 .button-hover:hover{
   background-color: #13a1f5;
+}
+
+.search-hamburger:hover{
+
 }
 
 .search-calendar{
@@ -213,13 +220,17 @@ body{
   background-color: #ffffff;
   border-bottom: .5px solid #c6c9ce;
   font-family: 'Karla', sans-serif;
-  height: 125%;
+  height: 140%;
 }
+
+.job-header-title{
+  font-size: 2rem;
+  }
 
 .grid-title-section{
   display: flex;
   position: relative;
-  top: 40px;
+  top: 25%;
   width: 800px;
   justify-content: space-around;
   padding-left: 2em;
@@ -228,6 +239,8 @@ body{
 
 .job-header{
   padding-left: 3em;
+  position: relative;
+  top: 5%;
 }
 
 .job-sub-header{
@@ -255,20 +268,32 @@ body{
     font-size: large;
   }
 
-  .section-hover{
+  .graph-section-hover{
     width: 70px;
     height: 5px;
     border-radius: 5px;
     background-color: #13a1f5;
     position: relative;
-    top: 45px;
+    top: 29%;
     left: 3.2em;
+  }
+
+  .previewpost{
+    font-size: small;
+    color: #13a1f5;
   }
 /*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
   margin-left: 3em;
   margin-right: 40px;
+  margin-top: 10%;
+  height: 270px;
+}
+
+.horizontal-rule{
+  position: relative;
+  top: 88%;
 }
 
 /*<--------------------------------Main Content---------------------------------->*/
@@ -336,6 +361,11 @@ body{
   display: flex;
   }
 
+  .job-descript{
+    display: flex;
+    align-items: flex-start;
+  }
+
 /*.hrdiv1{
   border-bottom: 1px solid black;
   width: 50%;
@@ -374,10 +404,8 @@ body{
 
 .media-aside img{
   grid-column: 2;
-  background-color: green;
   margin-right: 40px;
   width: 100%;
-  height: 40px;
   border-radius: 4px;
 }
 
@@ -386,6 +414,16 @@ body{
   height: 30px;
   border-radius: 4px 0px 0px 4px;
   margin-bottom: 1em;
+  outline: none;
+}
+
+/*.twitter img{
+  height: 100px;
+}*/
+
+.aside-header{
+  font-size: 1em;
+  margin-bottom: 0;
 }
 
 .media-aside-section{
@@ -398,6 +436,8 @@ body{
   background-color: #42b8ba;
   border-radius: 0px 4px 4px 0px;
   margin-bottom: 1em;
+  height: 35px;
+  border-left: none;
 }
 
 .copy-link{
