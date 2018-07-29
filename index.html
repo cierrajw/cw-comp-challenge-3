@@ -5,6 +5,8 @@
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
 
+  <link rel="stylesheet" type="text/css" href="doughnutgraphs.css"/>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -128,14 +130,17 @@
       <hr class="horizontal-rule">
       <div class="hrdivider"><i class="fas fa-angle-up"></i></div>
 
-      <canvas id="circlegraph" height="200" width="300">
-      <canvas id="bargraph" height="200" width="300">
+      <progress class="pie" value="20" max="100" style="--progress:20"></progress>
+
+      <progress class="pie" value="25" max="100" style="--progress:25"></progress>
+
+      <progress class="pie" value="30" max="100" style="--progress:30"></progress>
+
+      <div class="bar-graph-container"><canvas id="bargraph" height="200" width="300"></div>
+ 
 
         
     </section>
-
-<!-- 
-<section class="hrsection"><div class="hrdiv1"></div><i class="fas fa-angle-up"></i><div class="hrdiv2"></div></section> -->
 
     <main class="main-content">
 
@@ -233,6 +238,8 @@
   </container>
 
 </main>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <script src="./jquery/jquery-3.2.1.js"></script>
 <script src="script.js"></script>
