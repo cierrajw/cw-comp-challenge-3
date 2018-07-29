@@ -1,10 +1,11 @@
 body{
   margin: 0;
+  overflow-x: hidden; 
 }
 
 .content-section{
   display: grid;
-  grid-template-columns: 170px 4fr;
+  grid-auto-columns: 170px 4fr;
 }
 
 #bargraph{
@@ -15,6 +16,8 @@ body{
 }
 
 #circlegraph{
+  position: relative;
+  left: 50%;
 }
 
 
@@ -38,7 +41,7 @@ body{
   color: #e3e7ed;
   font-size: small;
   margin-left: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .side-menu-header-text{
@@ -77,7 +80,8 @@ body{
   position: relative;
   top: -3px;
   left: 14px;
-  font-size: small;
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .main-menu-section{
@@ -160,6 +164,7 @@ body{
   grid-column: 1;
   background-color: #ffffff;
   border-right: .5px solid #c6c9ce;
+  color: grey;
 }
 
 .search-bar{
@@ -171,6 +176,7 @@ body{
   grid-column: 2;
   height: 93%;
   width: 100%;
+  font-size: 2em;
 }
 
 .search-button{
@@ -182,11 +188,12 @@ body{
 
 .button-hover:hover{
   background-color: #13a1f5;
+  color: white;
 }
 
-.search-hamburger:hover{
-
-}
+/*.search-hamburger:hover{
+  color: white;
+}*/
 
 .search-calendar{
   grid-column: 4;
@@ -220,18 +227,19 @@ body{
   background-color: #ffffff;
   border-bottom: .5px solid #c6c9ce;
   font-family: 'Karla', sans-serif;
-  height: 140%;
+  height: 120%;
 }
 
 .job-header-title{
-  font-size: 2rem;
-  color: grey;
+  font-size: 2.5rem;
+  color: #5e6063;
+  margin-bottom: 0;
   }
 
 .grid-title-section{
   display: flex;
   position: relative;
-  top: 25%;
+  top: 16%;
   width: 800px;
   justify-content: space-around;
   padding-left: 2em;
@@ -259,15 +267,19 @@ body{
   }
 
   .open-button{
-    height: 30px;
-    width: 60px;
+    height: 40px;
+    width: 75px;
     border-radius: 15px;
     text-align: center;
   }
 
+  .open-button:hover{
+    background-color: #13a1f5
+  }
+
   .open-bullet{
     color: #86c338;
-    font-size: large;
+    font-size: 2em;
   }
 
   .graph-section-hover{
@@ -276,7 +288,7 @@ body{
     border-radius: 5px;
     background-color: #13a1f5;
     position: relative;
-    top: 29%;
+    top: 17%;
     left: 3.2em;
   }
 
@@ -284,6 +296,8 @@ body{
     font-size: small;
     color: #13a1f5;
   }
+
+
 /*<--------------------------------Graph Section--------------------------------->*/
 .graph-section{
   grid-area: graphsection;
@@ -383,32 +397,6 @@ body{
     align-items: flex-start;
   }
 
-/*.hrdiv1{
-  border-bottom: 1px solid black;
-  width: 50%;
-}
-
-.hrdiv2{
-  display: flex;
-  align-content: center;
-  border-bottom: 1px solid black;
-  width: 50%;
-}
-
-
-.hrsection{
-  width: 800px;
-  display: flex;
-  margin-left: 3em;
-  margin-bottom: 1em;
-}
-
-.hrsection i{
-  border: 1px solid black;
-  border-radius: 50% 50%;
-  margin-top: 2em;
-}*/
-
 /*<--------------------------------Media Aside---------------------------------->*/
 
 .media-aside{
@@ -417,6 +405,9 @@ body{
   flex-direction: column;
   background-color: #edf2f6;
   margin-right: 40px;
+  color: #5e6063;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .media-aside img{
@@ -434,10 +425,6 @@ body{
   outline: none;
 }
 
-/*.twitter img{
-  height: 100px;
-}*/
-
 .aside-header{
   font-size: 1em;
   margin-bottom: 0;
@@ -446,7 +433,7 @@ body{
 .media-aside-section{
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  align-items: space-around;
 }
 
 .copy-button{
@@ -466,6 +453,7 @@ body{
   flex-direction: column;
   height: 150px;
   justify-content: space-between;
+  margin-bottom: 4%;
 }
 
 .link-to-job{
