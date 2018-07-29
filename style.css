@@ -8,19 +8,6 @@ body{
   grid-auto-columns: 170px 4fr;
 }
 
-#bargraph{
-  display: grid;
-/*  border: 1px solid blue;
-*/  width: 500px;
-  height: 215px;
-}
-
-.bar-graph-container{
-  position: relative;
-  bottom: 103%;
-  left: 55%;
-}
-
 /*<--------------------------------Side menu---------------------------------->*/
 
 .side-menu {
@@ -308,7 +295,47 @@ body{
   margin-left: 3em;
   margin-right: 40px;
   margin-top: 10%;
-  height: 300px;
+  height: 330px;
+  position: relative;
+}
+
+#bargraph{
+  display: grid;
+/*  border: 1px solid blue;
+*/  width: 500px;
+  height: 215px;
+}
+
+.bar-graph-container{
+  position: relative;
+  bottom: 154%;
+  left: 55%;
+}
+
+.pie-div{
+  position: relative;
+  bottom: 10%;
+  display: flex;
+  width: 47%;
+  justify-content: space-between;
+}
+
+.bargraph-numbers{
+  position: relative;
+  left: 48%;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100px;
+}
+.bargraph-days{
+  display: flex;
+  width: 460px;
+  position: relative;
+  left: 57%;
+  bottom: 75%;
+  justify-content: space-between;
 }
 
 .horizontal-rule{
@@ -332,26 +359,28 @@ body{
   left: 48%;
 }
 
-.pie-div{
-  position: relative;
-  bottom: 20%;
-  display: flex;
-  width: 47%;
-  justify-content: space-between;
+.chart-buttons{
+  background-color: #fbfaf8;
+  border-radius: 15px;
+  border: .5px solid black;
+  display: inline;
+  width: 200px;
+  height: 30px;
+  font-size: small;
+  padding: .5em;
 }
 
-.bargraph-numbers{
-  display: inline;
+.chart-button-1{
   position: relative;
-  bottom: 300%;
+  top: 33px;
+  left: 16%;
 }
-.bargraph-days{
-  display: flex;
-  width: 460px;
+
+.chart-button-2{
   position: relative;
-  left: 57%;
-  bottom: 15%;
-  justify-content: space-between;
+  top: 50%;
+  left: 55%;
+  top: 35px;
 }
 /*<--------------------------------Main Content---------------------------------->*/
 
