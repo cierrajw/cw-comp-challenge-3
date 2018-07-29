@@ -10,50 +10,16 @@ body{
 
 #bargraph{
   display: grid;
-  border: 1px solid blue;
-  width: 400px;
-  height: 200px;
-/*  position: relative;
-  left: 20%;*/
+/*  border: 1px solid blue;
+*/  width: 500px;
+  height: 215px;
 }
 
 .bar-graph-container{
   position: relative;
-  bottom: 350%;
-  left: 58%;
+  bottom: 103%;
+  left: 55%;
 }
-
-.circle-graph-dimensions{
-  width: 550px;
-  height: 300px;
-}
-
-
-.circle-graph-container1{
-  position: relative;
-  left: 30%;
-  bottom: 40%;
-
-}
-
-.circle-graph-container2{
-  position: relative;
-  left: 15%;
-  bottom: 40%;
-
-}
-
-.circle-graph-container3{
-  position: relative;
-  left: 20%;
-  bottom: 270%;
-
-}
-
-.bar-graph-container{
-
-}
-
 
 /*<--------------------------------Side menu---------------------------------->*/
 
@@ -211,7 +177,11 @@ body{
   height: 93%;
   width: 100%;
   font-size: 2em;
-}
+  background-image: url('/Users/Cierra/Documents/Turing Projects/static-comp-3/images/search-solid.svg');
+  background-color: white;
+  background-repeat: no-repeat;
+/*  border: none;
+*/}
 
 .search-button{
   grid-column: 3;
@@ -338,7 +308,7 @@ body{
   margin-left: 3em;
   margin-right: 40px;
   margin-top: 10%;
-  height: 270px;
+  height: 300px;
 }
 
 .horizontal-rule{
@@ -360,6 +330,28 @@ body{
   position: relative;
   top: 80%;
   left: 48%;
+}
+
+.pie-div{
+  position: relative;
+  bottom: 20%;
+  display: flex;
+  width: 47%;
+  justify-content: space-between;
+}
+
+.bargraph-numbers{
+  display: inline;
+  position: relative;
+  bottom: 300%;
+}
+.bargraph-days{
+  display: flex;
+  width: 460px;
+  position: relative;
+  left: 57%;
+  bottom: 15%;
+  justify-content: space-between;
 }
 /*<--------------------------------Main Content---------------------------------->*/
 

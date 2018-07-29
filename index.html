@@ -77,7 +77,7 @@
 
 
       <section role="search" class="search-bar">
-        <input aria-label="search-bar" class="the-search-bar" type="text" name="SearchMenu">
+        <input aria-label="search-bar" class="the-search-bar" type="text" name="SearchMenu" placeholder="Search for a job, task, or resume">
       </section>
 
       <section class="search-button flex-center-search-items button-hover"><i class="fas fa-user-plus"></i></section>
@@ -130,15 +130,49 @@
       <hr class="horizontal-rule">
       <div class="hrdivider"><i class="fas fa-angle-up"></i></div>
 
-      <progress class="pie" value="25" max="100" style="--progress:25"></progress>
+       <!----------------------------------Doughnut Graph-------------------------------->
 
-      <progress class="pie" value="90" max="100" style="--progress:90"></progress>
 
-      <progress class="pie" value="60" max="100" style="--progress:60"></progress>
+
+      <div class="pie-div">
+        <progress class="pie pie1" value="3,154 Applicants" max="100" style="--progress:90"></progress>
+
+        <progress class="pie pie2" value="1,546 Interviews" max="100" style="--progress:60"></progress>
+
+        <progress class="pie pie3" value="912 &#10 Forwards" max="100" style="--progress:25"></progress>
+      </div>
+ 
+      
+       <!----------------------------------Bar Graph-------------------------------->
+
+       <div class="bargraph-numbers">
+         
+         <h6 class="bargraph-numbers">500</h6>
+         <h6 class="bargraph-numbers">400</h6>
+         <h6 class="bargraph-numbers">300</h6>
+         <h6 class="bargraph-numbers">200</h6>
+         <h6 class="bargraph-numbers">100</h6>
+
+       </div>
+
+       <div class="bargraph-days">
+        <h6>S</h6>
+        <h6>M</h6>
+        <h6>T</h6>
+        <h6>W</h6>
+        <h6>T</h6>
+        <h6>F</h6>
+        <h6>S</h6>
+        <h6>S</h6>
+        <h6>M</h6>
+        <h6>T</h6>
+        <h6>W</h6>
+        <h6>T</h6>
+       </div>
+
 
       <div class="bar-graph-container"><canvas id="bargraph" height="200" width="300"></div>
  
-
         
     </section>
 
@@ -239,9 +273,10 @@
 
 </main>
 
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 
 <script src="./jquery/jquery-3.2.1.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script src="script.js"></script>
 
 </body>

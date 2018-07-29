@@ -22,7 +22,7 @@ Incompatible browsers will display their regular progress bar */
     position:absolute; 
     top:8px; right:8px; bottom:8px; left:8px;
     border-radius:50%;
-    background: white;
+    background: #edf2f6;
     color:black;
     display:flex;
     align-items:center;
@@ -38,11 +38,11 @@ https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
   .pie {
     --progress:0;
     position: relative;
-    width: 100px; height:100px;
+    width: 150px; height:150px;
     border-radius: 50%;
-    background-color: lightgrey;
+    background-color: #dae3ea;
     background-image:
-      linear-gradient(to right, transparent 50%, yellowgreen 0);
+      linear-gradient(to right, transparent 50%, #4bbac3 0);
     color: transparent;
     text-align: center;
     animation-delay:calc(var(--progress)*-1s);
@@ -52,7 +52,7 @@ https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
     to { transform: rotate(.5turn); }
   }
   @keyframes bg {
-    50% { background: yellowgreen; }
+    50% { background: #b56cb5; }
   }
 
   .pie::before {
