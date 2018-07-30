@@ -3,6 +3,14 @@ window.onload = barGraph;
 // window.onload = doughnutGraph2;
 // window.onload = doughnutGraph3;
 
+$('.search-hamburger').on('click', hamburgerMenuClick);
+
+function hamburgerMenuClick(){
+  $('.side-menu').detach();
+  // $('.aside-container').replaceWith('main-nested');
+  var mainContent = $('.main-nested');
+  $('.aside-container').append(mainContent);
+}
 
 
 function barGraph(){

@@ -12,9 +12,13 @@ body{
 
 .side-menu {
   display: grid; 
-  grid-auto-rows: 12% 23% 20% 45%;
+/*  grid-auto-rows: 12% 23% 20% 45%;
+*/  
+  grid-auto-rows: 12% 20% 20% 58%;
   grid-column: 1;
   background-color: #354052;
+  overflow-y: hidden;
+  height: 100%;
 }
 
 .side-menu-icons {
@@ -129,6 +133,7 @@ body{
   "graphsection"
   "maincontent";
   background-color: #edf2f6;
+  width: 100vw;
   }
 
 /*<--------------------------------Top Search Bar---------------------------------->*/
@@ -139,6 +144,7 @@ body{
   grid-area: searchmenu;
   height: 65px;
   border-bottom: .5px solid #c6c9ce;
+  width: 100vw;
 }
 
 .flex-center-search-items{
@@ -363,7 +369,7 @@ body{
 
 .hrdivider{
   position: relative;
-  top: 80%;
+  top: 82%;
   left: 48%;
 }
 
@@ -407,8 +413,8 @@ body{
   grid-column: 1;
   display: flex;
   flex-direction: column;
-  background-color: blue;
-  margin-left: 3em;
+/*  background-color: inherit;
+*/  margin-left: 3em;
   margin-bottom: 3em;
 }
 
