@@ -92,31 +92,53 @@
 
     <!----------------------------------Job Description Title/Header-------------------------------->
     <container role="job-description" class="job-description">
+<!-- 
+      <section class="mobile-menu">
+        
+        <h3>Summary <i class="fas fa-chevron-circle-down"></i></h3>
+      </section> -->
 
       <section class="job-header">
-        <h3 class="job-header-title">Front-end Software Developer</h3>
-        <h4 class="job-sub-header candidate-location"><i class="fas fa-map-marker-alt"></i> San Fransisco, CA</h4>
+        <h3 class="job-header-title align-job-header">Front-end Software Developer</h3>
+        <h4 class="job-sub-header candidate-location align-job-header"><i class="fas fa-map-marker-alt"></i> San Fransisco, CA</h4>
         <h4 class="job-sub-header">&bull; <span class="previewpost">Preview this post</span></h4>
 
         <div class="job-description-options">
         <button class="open-button"><span class="open-bullet">&bull;</span>Open</button>
+        <span class="job-descript-icons">
         <i class="fas fa-bookmark"></i>
         <i class="far fa-edit"></i>
         <i class="fas fa-trash-alt"></i>
+        </span>
         </div>
+
 
       </section>
     
 
       <!----------------------------------Graph image header titles-------------------------------->
       <section role="graphs" class="grid-title-section">
-        <h5>SUMMARY</h5>
+
+        <nav class="toggle-nav hide">
+          <a class="dropdown-toggle hide" href="#" title="Menu">Summary</a>
+          <ul class="dropdown hide">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </nav>
+
+
+        <div class="graph-header-list mobile-menu">
+        <h5 class="summary-menu">SUMMARY</h5>
         <h5>APPLICANTS</h5>
         <h5>JOB BOARD</h5>
         <h5>INTERVIEWS</h5>
         <h5>ACTIVITY</h5>
         <h5>BROADCAST</h5>
         <h5>NOTIFICATIONS</h5>
+        </div>
 
       </section>
       <div class="graph-section-hover"></div>
@@ -136,11 +158,11 @@
 
 
       <div class="pie-div">
-        <progress class="pie pie1" value="3,154 Applicants" max="100" style="--progress:90"></progress>
+        <progress class="pie" value="3,154 Applicants" max="100" style="--progress:90"></progress>
 
-        <progress class="pie pie2" value="1,546 Interviews" max="100" style="--progress:60"></progress>
+        <progress class="pie" value="1,546 Interviews" max="100" style="--progress:60"></progress>
 
-        <progress class="pie pie3" value="912 &#10 Forwards" max="100" style="--progress:25"></progress>
+        <progress class="pie" value="912 &#10 Forwards" max="100" style="--progress:25"></progress>
       </div>
 
       <p class="chart-buttons chart-button-1">TOTALS &bull; out of 5,432 views</p>
@@ -245,7 +267,7 @@
         </section>
 
         <section role="link-to-job" class="link-to-job media-aside-section">
-          <h6 class="aside-header"><i class="fas fa-globe-africa"></i> Link to this job</h6>
+          <h6 class="aside-header aside-job-link"><i class="fas fa-globe-africa"></i> Link to this job</h6>
           <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
           <div class="copy-link"><input aria-label="copy-link"type="text" name="" value="https://www.google.com/forkthisrepo">
           <button aria-label="copy" class="copy-button">Copy</button></div>
@@ -280,9 +302,9 @@
 
 
 
-<script src="./jquery/jquery-3.2.1.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<script src="script.js"></script>
 
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="./jquery/jquery-3.2.1.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

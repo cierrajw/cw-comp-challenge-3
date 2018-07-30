@@ -251,6 +251,13 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.graph-header-list{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-right: 9em;
+}
+
 .job-header{
   padding-left: 3em;
   position: relative;
@@ -264,7 +271,7 @@ body{
 
 .job-description-options{
   display: inline;
-  padding-left: 28em;
+  padding-left: 50%;
   }
 
 .job-description-options i{
@@ -287,6 +294,10 @@ body{
     font-size: 2em;
   }
 
+  .grid-title-section{
+    width: 75%;
+  }
+
   .graph-section-hover{
     width: 70px;
     height: 5px;
@@ -294,7 +305,7 @@ body{
     background-color: #13a1f5;
     position: relative;
     top: 17%;
-    left: 3.2em;
+    left: 3.8em;
   }
 
   .previewpost{
@@ -396,6 +407,11 @@ body{
   left: 55%;
   top: 35px;
 }
+
+.pie{
+  height: 40%;
+  width: 40%;
+}
 /*<--------------------------------Main Content---------------------------------->*/
 
 .main-content{
@@ -476,7 +492,6 @@ body{
   margin-right: 40px;
   color: #5e6063;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .media-aside img{
@@ -503,6 +518,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: space-around;
+}
+
+.aside-job-link{
+  margin-top: 18%;
 }
 
 .copy-button{
@@ -539,3 +558,227 @@ body{
 
 
 /*<--------------------------------Media Queries---------------------------------->*/
+
+@media screen and (min-width: 321px) and (max-width: 400px){
+
+}
+
+  @media screen and (max-width: 414px){
+    .side-container{
+      visibility: hidden;
+    }
+
+    .graph-section{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      flex-direction: column;
+      background-color: red;
+    }
+
+    .main-section{
+      grid-column: 1/3;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      margin: 0;
+
+    }
+
+    .align-job-header{
+      position: relative;
+      right: 5%;
+    }
+    .job-header-title{
+      font-size: 1.3rem;
+      color: #5e6063;
+      margin-bottom: 2%;
+      width: 100vw;
+    }
+
+    .aside-container{
+      height: 0;
+    }
+
+    .search-calendar{
+    visibility: hidden;
+    }
+    .search-options{
+      visibility: hidden;
+    }
+    .search-button{
+    grid-column: 4/6;
+    }
+
+    .search-hamburger{
+    grid-column: 1/2;
+    }
+
+    .search-bar{
+      grid-column: 1/4;
+    }
+    .search-menu{
+      height: 50px;
+      position: relative;
+      bottom: 50%;
+      margin-top: 0;
+    }
+
+    .search-menu input{
+      height: 100%;
+    }
+
+    .search-hamburger{
+      visibility: hidden;
+    }
+
+    .job-description-options{
+      position: relative;
+      right: 38%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .open-button{
+      position: relative;
+      right: 15%;
+      width: 65%;
+      margin-bottom: 10%;
+      margin-top: 8%;
+    }
+
+    .job-descript-icons{
+      font-size: 2em;
+      position: relative;
+      right: 25%
+    }
+
+    .grid-title-section{
+      position: relative;
+      right: 16%;
+      background-color: #6f7e95;
+      background-image: url('/Users/Cierra/Documents/Turing Projects/static-comp-3/images/arrowdown.svg');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: bottom 53% right 50%;
+      width: 100%
+    }
+
+    .graph-header-list{
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      margin-left: 12em;
+      visibility: hidden;
+    }
+
+    .job-card{
+      grid-column: 1/3;
+      display: flex;
+      width:50%;
+      flex-direction: column;
+      margin: 0 2% 5% 2%;
+  }
+
+    .media-aside{
+      grid-column: 1;
+      grid-row: 2;
+      justify-content: center;
+      width: 75%;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    .toggle-nav{
+      background-color: #6f7e95;
+     position: relative;
+      left: 40%;
+      width:;
+/*      width: 100px;
+*/      left: 28%;
+      margin: 0 auto;
+    }
+
+    .dropdown-toggle {
+      /*padding: .5em 1em;*/
+      background: #6f7e95;
+      position: relative;
+      top: 20%;
+      border-radius: .2em .2em 0 0;
+    }
+    ul.dropdown {
+      display:none;
+      position: absolute;
+      top: 100%;
+      margin-top: 0;
+      margin-left: 5%;
+      margin-right: 5%;
+      background:  #6f7e95;
+/*      min-width: 20em;
+*//*      width: 100%;
+*//*      min-width: 12em;
+*/      padding: 0;
+      border-radius: 0 0 .2em .2em;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            padding: .5em 1em;
+            display: block;
+            background-color:  #6f7e95;
+          }
+     }
+
+     .graph-section-hover{
+        visibility: hidden;  
+        background-color: green; 
+        color: red;
+        width: 500px;
+  }
+
+/*  .dropdown-toggle{
+
+    background-color: ;
+    color: pink;
+
+
+  }
+
+
+  a.dropdown-toggle{
+
+    background-color: #6f7e95;
+    color: pink;
+
+
+  }*/
+
+/*  .media-aside-section{
+    display: flex;
+    text-align: center;
+  }*/
+/*  .search-bar{
+    width: 50%;
+  }*/
+/*
+    .search-bar input{
+      height: 1.7em;
+
+    }
+    .search-menu{
+      height: 15%;
+    }*/
+
+  /*  .pie-div{
+      grid-row: 1;
+    }
+
+    .bar-graph-container{
+      grid-row: 2;
+    }*/
+
+
+  }
+
+  @media screen and (max-width: 320px){
+
+  }

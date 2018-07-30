@@ -1,9 +1,74 @@
-window.onload = barGraph;
-// window.onload = doughnutGraph1;
-// window.onload = doughnutGraph2;
-// window.onload = doughnutGraph3;
+// Event Handlers
 
+window.onload = barGraph;
 $('.search-hamburger').on('click', hamburgerMenuClick);
+
+var gridTitleSection = $('.grid-title-section');
+
+$('.grid-title-section').on('click', summaryMenu);
+
+function summaryMenu(){
+
+      $(this).next('.mobile-menu').toggle();
+
+      console.log('u clicked on me!!!');
+      // gridTitleSection.addClass('.mobile-menu');
+}
+
+$(function() {
+  
+// Dropdown toggle
+$('.dropdown-toggle').click(function(){
+  $(this).next('.dropdown').toggle();
+});
+
+$(document).click(function(e) {
+  var target = e.target;
+  if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+    $('.dropdown').hide();
+  }
+      });
+
+});
+//Media Queries
+
+// $(window).resize(resizeMenu);
+
+$(window).resize(resizeMenu)
+         .trigger('resize');
+
+
+$(window).on('resize', resizeMenu);
+
+
+function resizeMenu(){
+
+      var mobilemenu = $('.mobile-menu');
+      var textArea = `<p>Summary <i class="fas fa-chevron-circle-down"> </p>`;
+      var jobDescript = $('.job-description');
+      var graphSection = $('.graph-section');
+      var toggleNav = $('.toggle-nav');
+   
+         if($(window).width() <= 414){
+
+                  $(jobDescript).add(textArea);
+
+                  graphSection.hide();
+
+                  console.log("added class on resize!");
+            }else if($(window).width() >= 414){
+
+                  toggleNav.children().hide();
+
+                   graphSection.show();
+
+                  console.log("screen is big again");
+
+                  mobilemenu.hide();
+            }   
+
+}
+
 
 function hamburgerMenuClick(){
   $('.side-menu').detach();
@@ -12,6 +77,8 @@ function hamburgerMenuClick(){
   $('.aside-container').append(mainContent);
 }
 
+
+// Graphs/Charts
 
 function barGraph(){
 

@@ -38,7 +38,7 @@ https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
   .pie {
     --progress:0;
     position: relative;
-    width: 150px; height:150px;
+    width: 150px; height: 150px;
     border-radius: 50%;
     background-color: #dae3ea;
     background-image:
