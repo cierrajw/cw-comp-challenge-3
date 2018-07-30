@@ -12,7 +12,7 @@ body{
 
 .side-menu {
   display: grid; 
-  grid-auto-rows: 15% 20% 20% 45%;
+  grid-auto-rows: 12% 23% 20% 45%;
   grid-column: 1;
   background-color: #354052;
 }
@@ -45,7 +45,7 @@ body{
   flex-direction: column;
   justify-content: center;
   padding: 4em 2em 3em .8em;
-  height: 51%;
+  height: 38%;
   border-bottom: 1px solid #1d1e1e;
   font-size: small;
   color: #e3e7ed;
@@ -55,12 +55,12 @@ body{
 
 .profile-img-section img{
   position: relative;
-  top: -7px;
+  top: 2px;
   left: 23px;
   border-radius: 50% 50%;
   border: 1px solid #16243a;
-  height: 105px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
 .profile-name{
