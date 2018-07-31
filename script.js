@@ -44,14 +44,15 @@ $(window).on('resize', resizeMenu);
 function resizeMenu(){
 
       var mobilemenu = $('.mobile-menu');
-      var textArea = `<p>Summary <i class="fas fa-chevron-circle-down"> </p>`;
+      // var textArea = `<p>Summary <i class="fas fa-chevron-circle-down"> </p>`;
       var jobDescript = $('.job-description');
       var graphSection = $('.graph-section');
       var toggleNav = $('.toggle-nav');
+      var graphHeader = $('.summary-menu');
    
          if($(window).width() <= 414){
 
-                  $(jobDescript).add(textArea);
+                  // $(jobDescript).add(textArea);
 
                   graphSection.hide();
 
@@ -62,9 +63,10 @@ function resizeMenu(){
 
                    graphSection.show();
 
+
                   console.log("screen is big again");
 
-                  mobilemenu.hide();
+                  // mobilemenu.hide();
             }   
 
 }
