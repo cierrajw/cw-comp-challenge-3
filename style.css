@@ -1182,9 +1182,16 @@ body {
 
 @media screen and (max-width: 320px){
 
+  .job-description-options{
+    text-align: center;
+  }
+
   .job-description{
-    width: 295px;
+    width: 100%
     overflow-y: hidden;
+    position: relative;
+    right: 50%;
+    text-align: center;
   }
 
   .job-card{
@@ -1218,13 +1225,13 @@ body {
   .job-descript-icons{
     display: flex;
     position: relative;
-    right: 33%;
+    right: 10%;
   }
 
   .open-button{
     width: 100%;
     position: relative;
-    left: 2%;
+    right: 50%;
   }
 
   .previewpost{
