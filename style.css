@@ -6,7 +6,7 @@ body {
 
 .content-section {
   display: grid;
-  grid-auto-columns: 170px 4fr;
+  grid-auto-columns: 200px 4fr;
   overflow-x: hidden; 
   height: 100vh;
 }
@@ -61,7 +61,7 @@ body {
 .profile-img-section img {
   position: relative;
   top: 2px;
-  left: 23px;
+  left: 36px;
   border-radius: 50% 50%;
   border: 1px solid #16243a;
   height: 90px;
@@ -71,7 +71,7 @@ body {
 .profile-name {
   position: relative;
   top: -3px;
-  left: 14px;
+  left: 18px;
   font-size: 1.2em;
   font-family: 'Source Sans Pro', sans-serif;
 }
