@@ -945,7 +945,6 @@ body {
     display: none;
   }
 
-
   .chart-button-1 {
     display: none;
   }
@@ -980,6 +979,10 @@ body {
 
   .job-card {
     margin-top: 0px;
+  }
+
+  .grid-title-section {
+    width: 100%;
   }
 
 }
