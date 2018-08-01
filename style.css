@@ -676,6 +676,10 @@ body {
 
 @media screen and (max-width: 414px){
 
+  .bullet{
+    display: none;
+  }
+
 .graph-section{
   box-sizing: border-box;
   height: auto;
@@ -707,6 +711,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: auto;
+  margin-top: 15%;
 }
 
 .summary-menu{
@@ -819,7 +824,7 @@ body {
 @media screen and (max-width: 320px){
 
   .graphs{
-    margin-top: 10%;
+    margin-top: 20%;
   }
 }
 /*media screen and and (max-width: 1441px){
