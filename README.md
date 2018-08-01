@@ -3,4 +3,4 @@ and I borrowed the doughnut graph from CodePen.
 
 <br>
 
-Pitures coming soon in the morning.
+Pictures coming soon in the morning.
