@@ -402,6 +402,7 @@ body {
   height: 30px;
   font-size: small;
   padding: .5em;
+  text-align: center;
 }
 
 /*.chart-button-1 {
@@ -410,11 +411,12 @@ body {
   left: 16%;
 }
 */
-.chart-button-2 {
+/*.chart-button-2 {
   position: relative;
   bottom: 600px;
   left: 55%;
-}
+}*/
+
 
 .pie {
   height: 40%;
@@ -677,6 +679,7 @@ body {
 .chart-button-1 {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
 #bargraph{
@@ -685,6 +688,7 @@ body {
 
 .grid-header-list{
   display: inline-block;
+  margin-left: 0px;
 }
 
 .pie-div .pie{
@@ -695,8 +699,14 @@ body {
 .graphs{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
   height: auto;
+}
+
+.summary-menu{
+  height: 50px;
+  border-bottom: 2px solid #44a1f5;
+  margin-bottom: 0;
 }
 
 .pie-div{
@@ -716,10 +726,6 @@ body {
     display: none;
   }
 
-/*  .main-content{
-    grid-row
-  }*/
-
   .main-section{
     grid-column: 1/3
   }
@@ -729,10 +735,8 @@ body {
     grid-column: 1/3;
     display: flex;
     width: 100%;
-/*    flex-direction: column;
-*/    justify-content: center;
-/*    margin: 0 2% 5% 2%;
-*/  }
+    justify-content: center;
+  }
 
   .media-aside{
     grid-column: 1/3;
@@ -741,6 +745,28 @@ body {
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
+  }
+
+  .graph-header-list :not(:first-child) {
+    display: none;
+  }
+
+  .grid-title-section{
+    box-sizing: border-box;
+    margin-left: 0;
+    display: flex;
+  }
+
+.summary-hamburger{
+  padding-right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+  .summary-hamburger img{
+    height: 40px;
+    width: 40px;
+
   }
 }
 
