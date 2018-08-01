@@ -599,6 +599,41 @@ body {
 
 }
 
+@media screen and (min-width: 1441px) and (max-width: 1680px){
+
+  .pie-img-div, .bargraph-img-div {
+    display: none;
+  }
+
+  .bar-graph-container {
+    visibility: visible;
+    position: relative;
+    bottom: 165%;
+  }
+
+  .chart-button-1 {
+    position: relative;
+    bottom: 150%;
+  }
+
+  .chart-button-2 {
+    position: relative;
+    bottom: 150%;
+  }
+
+  .bargraph-days {
+    position: relative;
+    bottom: 83%;
+  }
+
+  .bargraph-numbers {
+    position: relative;
+    bottom: 57%;
+  }
+
+
+}
+
 @media screen and and (max-width: 1441px){
   .graph-section {
     display: none;
@@ -654,39 +689,40 @@ body {
 
 }
 
+@media screen and (max-width: 1100px){
 
-@media screen and (min-width: 1441px) and (max-width: 1680px){
+  .job-card {
+    grid-column: 1/3;
+    display: flex;
+    width: 93%;
+    flex-direction: column;
+    margin: 0 2% 5% 2%;
+  }
 
-  .pie-img-div, .bargraph-img-div {
+  .media-aside {
+    grid-column: 1/3;
+    grid-row: 2;
+    justify-content: center;
+    width: 93%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px){
+
+ .media-icons {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
+
+ .pie-img-div, .bargraph-img-div {
     display: none;
   }
-
-  .bar-graph-container {
-    visibility: visible;
-    position: relative;
-    bottom: 165%;
-  }
-
-  .chart-button-1 {
-    position: relative;
-    bottom: 150%;
-  }
-
-  .chart-button-2 {
-    position: relative;
-    bottom: 150%;
-  }
-
-  .bargraph-days {
-    position: relative;
-    bottom: 83%;
-  }
-
-  .bargraph-numbers {
-    position: relative;
-    bottom: 57%;
-  }
-
 
 }
 
@@ -706,35 +742,6 @@ body {
   }
 
   .horizontal-rule, .hrdivider {
-    display: none;
-  }
-
-}
-
-  @media screen and (max-width: 800px){
-
-    .pie-img-div, .bargraph-img-div {
-      display: none;
-    }
-
-     .graph-section {
-      height: 0px;
-     }
-
-  }
-
-
-@media screen and (min-width: 1100px) and (max-width: 1440px){
-
- .media-icons {
-    display: flex;
-    flex-direction: column;
-    height: 170px;
-    justify-content: space-between;
-    margin-bottom: 4%;
-  }
-
- .pie-img-div, .bargraph-img-div {
     display: none;
   }
 
@@ -803,6 +810,18 @@ body {
   }
 
 }
+
+@media screen and (max-width: 800px){
+
+    .pie-img-div, .bargraph-img-div {
+      display: none;
+    }
+
+     .graph-section {
+      height: 0px;
+     }
+
+  }
 
 @media screen and (min-width: 800px) and (max-width: 960px){
 
@@ -926,7 +945,6 @@ body {
     display: none;
   }
 
-
   .chart-button-1 {
     display: none;
   }
@@ -961,6 +979,10 @@ body {
 
   .job-card {
     margin-top: 0px;
+  }
+
+  .grid-title-section {
+    width: 100%;
   }
 
 }
