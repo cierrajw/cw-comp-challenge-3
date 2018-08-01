@@ -172,7 +172,7 @@ body {
   height: 93%;
   width: 100%;
   font-size: 2em;
-  background-image: url('/Users/Cierra/Documents/Turing Projects/static-comp-3/images/search1.svg');
+  background-image: url('/cw-comp-challenge-3/images/search1.SVG');
   background-position: 5px;
   background-size: 35px 35px;
   background-color: white;
@@ -302,7 +302,7 @@ body {
   background-color: #13a1f5;
   position: relative;
   top: 17%;
-  left: 6.5%;
+  left: 4.5%;
 }
 
 .previewpost {
