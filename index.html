@@ -5,45 +5,325 @@
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
 
+  <link rel="stylesheet" type="text/css" href="doughnutgraphs.css"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
 </head>
 <body>
 
-<section class="content-section">
-  
-<aside class="side-menu">
+<!----------------------------------Main Content Area-------------------------------->
 
-  <section class="profile-img-section">
-    <img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/cutedoge.jpg">
-    <h3>Cierra Washington ^</h3>
+<section role="content-section" class="content-section">
+
+<!----------------------------------Side Menu-------------------------------->
+  
+  <container class="aside-container">
+<aside role="menu" class="side-menu">
+
+  <section role="profile-image" class="profile-img-section">
+    <img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/fairygirl.jpg">
+    <h3 class="profile-name">Cierra Washington <i class="fas fa-angle-down"></i></h3>
   </section>
 
-  <section class="main-menu-section">hiiiiiiballl</section>
-  <section class="admin-section">oiiiiii</section>
-  <section class="categories-section">wuuuutttt</section>
+  <section role="main-menu" class="main-menu-section">
+    <h3 class="side-menu-header-text">Main</h3>
+    <p class="side-menu-text"><i class="fas fa-home side-menu-icons"></i> HOME</p>
+    <p class="side-menu-text"><i class="fas fa-user-md side-menu-icons"></i> JOBS</p>
+    <p class="side-menu-text"><i class="far fa-file side-menu-icons" > </i>RESUMES</p>
+    <p class="side-menu-text"><i class="fas fa-tasks side-menu-icons"></i> TASKS</p>
+    <p class="side-menu-text"><i class="fas fa-calendar-alt side-menu-icons"></i> CALENDAR</p>
+  </section>
+
+  <section role="admin" class="admin-section">
+    <h3 class="side-menu-header-text">Admin</h3>
+
+    <p class="side-menu-text"><i class="fas fa-users side-menu-icons"></i>USERS</p>
+    <p class="side-menu-text"><i class="fas fa-thumbtack side-menu-icons"></i> LOCATIONS</p>
+    <p class="side-menu-text"><i class="fas fa-briefcase side-menu-icons"></i> WORKFLOWS</p>
+    <p class="side-menu-text"><i class="fas fa-chalkboard side-menu-icons"></i> JOB BOARDS</p>
+    <p class="side-menu-text"><i class="fab fa-twitter side-menu-icons"></i> SOCIAL</p>
+  </section>
+
+  <section role="categories" class="categories-section">
+  <h3 class="side-menu-header-text">Categories</h3>
+  <p class="side-menu-text"><i class="fas fa-check-square side-menu-icons"></i> Administrative</p>
+  <p class="side-menu-text"><i class="fas fa-square square2 side-menu-icons"></i> Design</p>
+  <p class="side-menu-text"><i class="fas fa-square square3 side-menu-icons"></i> Executive</p>
+  <p class="side-menu-text"><i class="fas fa-square square4 side-menu-icons"></i> Human Resources</p>
+  </section>
 
 </aside>
+</container>
 
+<!----------------------------------Main Content Section-------------------------------->
 
-<section class="main-section">
+<main role="main-section" class="main-section">
 
-    <section class="main-nested">
+  <container role="main-content" class="main-nested">
+
+    <!----------------------------------Search bar-------------------------------->
   
-    <header class="search-menu">hey</header>
+    <header class="search-menu">
+      <section class="search-hamburger flex-center-search-items button-hover"><i class="fas fa-caret-left"></i> <i class="fas fa-bars"></i>
+      </section>
 
-    <section class="graph-section">yo</section>
 
-    <section class="job-description">hiiii</section>
+      <section role="search" class="search-bar">
+        <input aria-label="search-bar" class="the-search-bar" type="text" name="SearchMenu" placeholder="Search for a job, task, or resume">
+      </section>
 
-    <main class="main-content">oioioi</main>
+      <section class="search-button flex-center-search-items button-hover"><i class="fas fa-user-plus"></i></section>
+
+      <section class="search-calendar flex-center-search-items button-hover"><i class="far fa-calendar-plus"></i></section>
+
+      <section class="search-options flex-center-search-items button-hover"><i class="fas fa-th"></i></section>
+
+
+    </header>
+
+    <!----------------------------------Job Description Title/Header-------------------------------->
+    <container role="job-description" class="job-description">
+<!-- 
+      <section class="mobile-menu">
+        
+        <h3>Summary <i class="fas fa-chevron-circle-down"></i></h3>
+      </section> -->
+
+      <section class="job-header">
+        <h3 class="job-header-title align-job-header">Front-end Software Developer</h3>
+        <h4 class="job-sub-header candidate-location align-job-header"><i class="fas fa-map-marker-alt"></i> San Fransisco, CA</h4>
+        <h4 class="job-sub-header job-sub-header2"><span class="bullet">&bull;</span> <span class="previewpost">Preview this post</span></h4>
+
+        <div class="job-description-options">
+        <button class="open-button"><span class="open-bullet">&bull;</span>Open</button>
+        <span class="job-descript-icons">
+        <i class="fas fa-bookmark"></i>
+        <i class="far fa-edit"></i>
+        <i class="fas fa-trash-alt"></i>
+        </span>
+        </div>
+
+
+      </section>
+    
+<!--       <p class="short-summary">Summary <i class="fas fa-chevron-circle-down"></i></p>
+ -->
+      <!----------------------------------Graph image header titles-------------------------------->
+      <section role="graphs" class="grid-title-section">
+
+        <p>Summary <i class="fas fa-chevron-circle-down"></i></p>
+
+     <!--    <nav class="toggle-nav">
+          <a class="dropdown-toggle" href="#" title="Menu">Summary</a>
+          <ul class="dropdown">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </nav> -->
+
+
+
+
+        <div class="graph-header-list mobile-menu">
+        <h5 class="summary-menu">SUMMARY</h5>
+        <h5>APPLICANTS</h5>
+        <h5>JOB BOARD</h5>
+        <h5>INTERVIEWS</h5>
+        <h5>ACTIVITY</h5>
+        <h5>BROADCAST</h5>
+        <h5>NOTIFICATIONS</h5>
+        </div>
+
+      </section>
+      <div class="graph-section-hover"></div>
+
+    </container>
+
+    <!----------------------------------Canvas-------------------------------->
+
+    <section role="graph-section" class="graph-section">
+      <hr class="horizontal-rule">
+      <div class="hrdivider"><i class="fas fa-angle-up"></i></div>
+
+       <!----------------------------------Doughnut Graph-------------------------------->
+
+
+       <div class="pie-img-div"></div>
+
+      <div class="pie-div">
+        <progress class="pie" value="3,154" style="--progress:90"></progress>
+
+        <progress class="pie" value="1,546" max="100" style="--progress:60"></progress>
+
+        <progress class="pie" value="912" style="--progress:25"></progress>
+      </div>
+
+<!----------------------------------Div For Graph Images-------------------------------->
+      <section class="graph-imgs-div">
+
+         <div class="pie-img-div">
+          
+          <img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/donutgraphscreenshot.png" width="500" height="400">
+        </div>
+
+        <div class="bargraph-img-div">
+          
+          <img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/bargraphscreenshot.png" width="350" height="400">
+        </div> 
+
+      </section>
+
+      <p class="chart-buttons chart-button-1">TOTALS &bull; out of 5,432 views</p>
+ 
+      
+       <!----------------------------------Bar Graph-------------------------------->
+
+       <p class="chart-buttons chart-button-2">APPLICANTS/DAY</p>
+
+       <div class="bargraph-numbers" tooltip=”tooltip content here” tooltip-position=”left”>
+         
+         <h6 class="bargraph-numbers">500</h6>
+         <h6 class="bargraph-numbers">400</h6>
+         <h6 class="bargraph-numbers">300</h6>
+         <h6 class="bargraph-numbers">200</h6>
+         <h6 class="bargraph-numbers">100</h6>
+
+       </div>
+
+       <div class="bargraph-days">
+        <h6>S</h6>
+        <h6>M</h6>
+        <h6>T</h6>
+        <h6>W</h6>
+        <h6>T</h6>
+        <h6>F</h6>
+        <h6>S</h6>
+        <h6>S</h6>
+        <h6>M</h6>
+        <h6>T</h6>
+        <h6>W</h6>
+        <h6>T</h6>
+       </div>
+
+
+      <div class="bar-graph-container"><canvas id="bargraph" height="200" width="300"></div>
+ 
+        
+    </section>
+
+    <main class="main-content">
+
+
+
+
+<!----------------------------------Job card -------------------------------->
+      <article role="job-card" class="job-card">
+
+        <section role="job-card-header" class="job-card-header">
+          <h3>Job Description</h3>
+          <div class="edit-job-button"><i class="fas fa-pencil-alt"></i> Edit</div>
+        </section>
+
+        <section role="job-card-body" class="job-card-body">
+          <div class="job-card-div">
+            <h5>POSITION TITLE</h5>
+            <p>Front-end Software Developer</p>
+          </div>
+          <div class="job-card-div">
+            <h5>LOCATION</h5>
+            <p>San Francisco, CA</p>
+          </div>
+          <div class="job-card-div">
+            <h5>EMPLOYMENT TYPE</h5>
+            <p>Full-time</p>
+          </div>
+          <div class="job-card-div">
+            <h5>EXPERIENCE</h5>
+            <p>Mid-level</p>
+          </div>
+          <div class="job-card-div">
+            <h5>STATUS</h5>
+            <p>Open</p>
+          </div>
+          <div class="job-card-div">
+            <h5 class="job-card-div">DESCRIPTION</h5>
+            <p>the developer</p>
+          </div>
+          <div class="job-card-div">
+            <h5>HIRING LEAD</h5>
+            <p>Tom Tommy</p>
+          </div>
+          <div class="job-card-div">
+            <h5>APPROVED SALARY</h5>
+            <p>$850,000</p>
+          </div>
+    
+
+        </section>
+        
+      </article>
+
+<!----------------------------------Media Aside-------------------------------->
+
+      <aside role="social-media" class="media-aside">
+        <section class="media-icons">
+          
+          <img class="facebook" src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/facebooklink.png">
+          <img class="twitter" src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/twitterlink.png">
+          <img class="linkedin" src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/linkedinlink.png">
+
+        </section>
+
+        <section role="link-to-job" class="link-to-job media-aside-section">
+          <h6 class="aside-header aside-job-link"><i class="fas fa-globe-africa"></i> Link to this job</h6>
+          <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
+          <div class="copy-link"><input aria-label="copy-link"type="text" name="" value="https://www.google.com/forkthisrepo">
+          <button aria-label="copy" class="copy-button">Copy</button></div>
+        </section>
+
+        <section role="widget" class="button-widget media-aside-section">
+
+          <h6 class="aside-header"><i class="fas fa-wrench"></i> Use the button widget</h6>
+          <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
+          <div class="copy-link"><input aria-label="copy-link" type="text" name="" value="https://www.google.com/forkthisrepo">
+          <button aria-label="copy" class="copy-button">Copy</button></div>
+        </section>
+
+        <section role="upload-resume" class="upload-resume media-aside-section">
+
+          <h6 class="aside-header"><i class="fas fa-file-upload"></i> Upload Resumes by Email</h6>
+          <p>Lorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium ipsumLorium</p>
+          <input aria-label="upload-resume" type="text" name="" value="resumes@execdesign.com">
+
+        </section>
+        
+        
+      </aside>
+
+    </main>
 
     </section>
 
-  </section>
-  
-</section>
+  </container>
 
-  
+</main>
 
 
+
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="./jquery/jquery-3.2.1.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

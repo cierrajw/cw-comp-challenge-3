@@ -1,0 +1,75 @@
+/*  WEBKIT / BLINK ONLY, as Firefox doesn't support ::before or ::after pseudo classes on progress bar, nor does it allow keyframe animation on progress bar. Same case for Edge. IE doesn't understand variables, so that's also out.
+Incompatible browsers will display their regular progress bar */
+
+@supports( -webkit-appearance: none){
+
+  progress{
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+            appearance: none;
+  }
+
+  /*gets rid of all pseudo elements*/
+  ::-webkit-progress-inner-element, ::-webkit-progress-bar, ::-webkit-progress-value{
+    display:none;
+  }
+
+
+  /* just a white masking to turn the pie chart into a progress circle*/
+  .pie:after{
+    background-blend-mode: lighten;
+    content:attr(value) "%";
+    position:absolute; 
+    top:8px; right:8px; bottom:8px; left:8px;
+    border-radius:50%;
+    background: #edf2f6;
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1rem;
+    font-weight:700;
+  }
+
+
+  .pie {
+    --progress:0;
+    position: relative;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background-color: #dae3ea;
+    background-image:
+      linear-gradient(to right, transparent 50%, #4bbac3 0);
+    color: transparent;
+    text-align: center;
+    animation-delay:calc(var(--progress)*-1s);
+  }
+
+  @keyframes spin {
+    to { transform: rotate(.5turn); }
+  }
+  @keyframes bg {
+    50% { background: #b56cb5; }
+  }
+
+  .pie::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    width: 50%; height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+    animation: spin 50s linear infinite,
+               bg 100s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+    animation-fill-mode: forwards;
+  } 
+  
+  .pie[value="100"]{
+    /*awful hack to fix the 100%, as for whatever reason it doesn't want to comply with the forwards fill mode. Input is appreciated */
+    animation-delay: -99.9s;
+  }
+  
+}
