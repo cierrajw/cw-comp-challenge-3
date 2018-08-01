@@ -230,6 +230,12 @@ body {
   height: 120%;
 }
 
+.job-descript-icon{
+  border: .5px solid grey;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .job-header-title {
   font-size: 2rem;
   color: #5e6063;
@@ -255,10 +261,10 @@ body {
 }
 
 .job-header {
-  padding-left: 3em;
-  position: relative;
-  top: 5%;
-}
+/*  padding-left: 3em;
+*/  position: relative;
+/*  top: 5%;
+*/}
 
 .job-sub-header {
   display: inline;
@@ -267,8 +273,8 @@ body {
 
 .job-description-options {
   display: inline;
-  padding-left: 50%;
-}
+/*  padding-left: 50%;
+*/}
 
 .job-description-options i {
   padding-left: 1em;
@@ -763,13 +769,59 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-  .summary-hamburger img{
-    height: 40px;
-    width: 40px;
+.summary-hamburger img{
+  height: 40px;
+  width: 40px;
 
   }
+
+  .job-description-options{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .job-descript-icons{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+/*    padding-right: 8em;
+*/}
+
+  .open-button{
+    width: 50%;
+    padding-bottom: 3%;
+
+  }
+
+  .align-job-header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .job-header-title{
+
+    text-align: center;
+
+  }
+
+  .previewpost{
+    padding-bottom: 3%;
+  }
+
 }
 
+
+@media screen and (max-width: 320px){
+
+  .graphs{
+    margin-top: 10%;
+  }
+}
 /*media screen and and (max-width: 1441px){
   .graph-section {
     display: none;
