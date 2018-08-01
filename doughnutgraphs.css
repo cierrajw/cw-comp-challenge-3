@@ -31,9 +31,6 @@ Incompatible browsers will display their regular progress bar */
     font-weight:700;
   }
 
-  /* from here on, it's Lea Verou's pie charts with CSS, but running CSS vars for the progress value
-https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
-*/
 
   .pie {
     --progress:0;

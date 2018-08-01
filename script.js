@@ -5,15 +5,15 @@ $('.search-hamburger').on('click', hamburgerMenuClick);
 
 var gridTitleSection = $('.grid-title-section');
 
-$('.grid-title-section').on('click', summaryMenu);
+// $('.grid-title-section').on('click', summaryMenu);
 
-function summaryMenu(){
+// function summaryMenu(){
 
-      $(this).next('.mobile-menu').toggle();
+//       $(this).next('.mobile-menu').toggle();
 
-      console.log('u clicked on me!!!');
-      // gridTitleSection.addClass('.mobile-menu');
-}
+//       console.log('u clicked on me!!!');
+//       // gridTitleSection.addClass('.mobile-menu');
+// }
 
 // $(function() {
   
@@ -44,15 +44,12 @@ $(window).on('resize', resizeMenu);
 function resizeMenu(){
 
       var mobilemenu = $('.mobile-menu');
-      // var textArea = `<p>Summary <i class="fas fa-chevron-circle-down"> </p>`;
       var jobDescript = $('.job-description');
       var graphSection = $('.graph-section');
       var toggleNav = $('.toggle-nav');
       var graphHeader = $('.summary-menu');
    
          if($(window).width() <= 414){
-
-                  // $(jobDescript).add(textArea);
 
                   graphSection.hide();
 
@@ -66,14 +63,19 @@ function resizeMenu(){
 
                   console.log("screen is big again");
 
-                  // mobilemenu.hide();
             }   
+
+              if($(window).width() <= 1441){
+                  $('.graph-secton').detach();
+              }
+
+
 
 }
 
 
 function hamburgerMenuClick(){
-  $('.side-menu').detach();
+  $('.side-menu').toggle();
   // $('.aside-container').replaceWith('main-nested');
   var mainContent = $('.main-nested');
   $('.aside-container').append(mainContent);
@@ -102,8 +104,6 @@ function barGraph(){
       ctx.fillRect(235, 6, 8, 300);
       ctx.fillRect(260, 6, 8, 300);
       ctx.fillRect(285, 6, 8, 300);
-      // ctx.fillRect(190, 6, 8, 300);
-      // ctx.fillRect(1005, 6, 8, 300);
 
       console.log("This is bar graph!!");
 
