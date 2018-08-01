@@ -1079,7 +1079,8 @@ body {
     margin-right: 8em;
     width: 70%;
     grid-row: 1;
-    width: 93%;
+    width: 100%;
+    grid-template-rows: 0px 1fr;
   }
 
   .search-menu input {
@@ -1107,7 +1108,8 @@ body {
   .job-descript-icons {
     font-size: 2em;
     position: relative;
-    right: 25%
+    right: 25%;
+    display: flex;
   }
 
   .job-description{
