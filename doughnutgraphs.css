@@ -18,7 +18,7 @@ Incompatible browsers will display their regular progress bar */
   /* just a white masking to turn the pie chart into a progress circle*/
   .pie:after{
     background-blend-mode: lighten;
-    content:attr(value) "%";
+    content:attr(value) "";
     position:absolute; 
     top:8px; right:8px; bottom:8px; left:8px;
     border-radius:50%;
