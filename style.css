@@ -227,7 +227,6 @@ body {
   background-color: #ffffff;
   border-bottom: .5px solid #c6c9ce;
   font-family: 'Karla', sans-serif;
-  height: 120%;
 }
 
 .job-descript-icon{
@@ -244,20 +243,20 @@ body {
 .grid-title-section {
   display: flex;
   position: relative;
-  top: 16%;
-  width: 800px;
-  justify-content: space-around;
-  padding-left: 2em;
-  font-family: 'Roboto', sans-serif;
+/*  top: 16%;
+*//*  width: 800px;
+*/  justify-content: space-around;
+/*  padding-left: 2em;
+*/  font-family: 'Roboto', sans-serif;
   color: #5e6063;
 }
 
 .graph-header-list {
   display: flex;
   width: 80%;
-  justify-content: space-between;
-  margin-right: 9em;
-}
+  justify-content: center;
+/*  margin-right: 9em;
+*/}
 
 .job-header {
 /*  padding-left: 3em;
@@ -296,11 +295,11 @@ body {
   font-size: 2em;
 }
 
-.grid-title-section {
+/*.grid-title-section {
   width: 75%;
-}
+}*/
 
-.graph-section-hover {
+/*.graph-section-hover {
   width: 70px;
   height: 5px;
   border-radius: 5px;
@@ -308,7 +307,7 @@ body {
   position: relative;
   top: 17%;
   left: 4.5%;
-}
+}*/
 
 .previewpost {
   font-size: small;
@@ -757,7 +756,7 @@ body {
     text-align: center;
     width: 90%;
   }
-  
+
   .media-icons {
     display: flex;
     flex-direction: row;
@@ -768,7 +767,7 @@ body {
 
   .media-icons img{
     width: 90px;
-    height: 30px;
+    height: 50px;
   }
 
   .bargraph-numbers, .bargraph-days{
@@ -786,8 +785,8 @@ body {
   .graph-section{
     box-sizing: border-box;
     height: auto;
-    margin-top: 8%;
-  }
+/*    margin-top: 8%;
+*/  }
 
   .chart-button-1 {
     display: flex;
@@ -803,6 +802,7 @@ body {
   .grid-header-list{
     display: inline-block;
     margin-left: 0px;
+    margin-bottom: 0;
   }
 
   .pie-div .pie{
@@ -865,10 +865,11 @@ body {
     box-sizing: border-box;
     margin-left: 0;
     display: flex;
-  }
+    width: 80%;
+    }
 
   .summary-hamburger{
-    padding-right: 8%;
+    padding-left: 5%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -891,10 +892,12 @@ body {
 
   .job-descript-icons{
     display: flex;
+    position: relative;
+    right: 4%;
+    margin-bottom: 8%;
     justify-content: space-between;
-    justify-content: center;
     padding-top: 4%;
-    width: 100%;
+    width: 80%;
     color: grey;
   }
 
