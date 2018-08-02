@@ -5,10 +5,8 @@ $('.search-hamburger').on('click', hamburgerMenuClick);
 
 var gridTitleSection = $('.grid-title-section');
 
-
 function hamburgerMenuClick(){
   $('.side-menu').toggle();
-  // $('.aside-container').replaceWith('main-nested');
   var mainContent = $('.main-nested');
   $('.aside-container').append(mainContent);
 }
