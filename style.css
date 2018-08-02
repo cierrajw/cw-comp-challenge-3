@@ -35,8 +35,8 @@ body {
 .side-menu-text {
   display: flex;
   color: #e3e7ed;
-  font-size: small;
-  margin-left: 1em;
+  font-size: 1em;
+  margin-left: 1.5em;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
