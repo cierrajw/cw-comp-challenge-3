@@ -1,7 +1,5 @@
 body {
   margin: 0;
-/*  overflow-x: hidden; 
-*/  box-sizing: content-box;
 }
 
 .content-section {
@@ -14,10 +12,14 @@ body {
 
 .side-menu {
   display: grid; 
-  grid-auto-rows: 12% 20% 20% 58%;
+  grid-auto-rows: 12% 20% 20% 48%;
   grid-column: 1;
   background-color: #354052;
   overflow-y: hidden;
+  height: 100%;
+}
+
+.aside-container{
   height: 100%;
 }
 
@@ -321,7 +323,6 @@ body {
 /*  margin-left: 3em;
   margin-right: 40px;
   margin-top: 10%;*/
-  height: 130%;
   width: 100vw;
   position: relative;
   border-bottom: .5px solid grey;
@@ -429,13 +430,15 @@ body {
 /*<--------------------------------Main Content---------------------------------->*/
 
 .main-content {
+  box-sizing: border-box;
   grid-area: maincontent;
   display: grid;
   grid-auto-columns: 2.5fr 1fr;
   background-color: #edf2f6;
   column-gap: 5%;
-  margin-top: 10%;
-  height: 100vh;
+  padding-top: 5%;
+/*  margin-top: 10%;
+*/  height: 100%;
 }
 
 /*<--------------------------------Job Card---------------------------------->*/
@@ -601,7 +604,7 @@ body {
   }
 
 }
-
+/*
 @media screen and (min-width: 1680px){
 
 
@@ -625,17 +628,7 @@ body {
     bottom: 150%;
   }
 
-/*  .bargraph-days {
-    position: relative;
-    bottom: 83%;
-  }*/
-/*
-  .bargraph-numbers {
-    position: relative;
-    bottom: 57%;
-  }*/
-
-}
+}*/
 
 @media screen and (min-width: 1242px){
 
@@ -651,12 +644,20 @@ body {
   .graphs{
     display: flex;
     width: 85%;
+    margin: 0 auto;
     justify-content: space-around;
   }
 
   .pie-div, .bar-graph-container{
     align-items: center;
   }
+
+  .fa-user-plus:before, .fa-calendar-plus:before, .fa-th:before, .fa-bars:before{
+    font-size: 2em;
+    color: grey;
+
+  }
+
 
 }
 
@@ -682,7 +683,7 @@ body {
 }
 
 /*Tablet Screens*/
-@media screen and (min-width: 415px) and (max-width: 1242px){
+@media screen and (min-width: 581px) and (max-width: 1300px){
 
   .side-menu{
     display: none;
@@ -748,7 +749,7 @@ body {
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 580px){
 
 .media-aside-section{
     display: flex;
@@ -808,8 +809,9 @@ body {
   .pie-div .pie{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
+
   }
 
   .graphs{
@@ -909,6 +911,7 @@ body {
   .open-button{
     width: 50%;
     padding-bottom: 3%;
+    margin-bottom: 6%;
 
   }
 
