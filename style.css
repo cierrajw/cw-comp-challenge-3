@@ -72,10 +72,10 @@ body {
 
 .profile-name {
   position: relative;
-  top: -3px;
-  left: 18px;
+  padding-top: 1.3em;
   font-size: 1.2em;
   font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 auto;
 }
 
 .main-menu-section {
