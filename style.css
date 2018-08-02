@@ -231,8 +231,7 @@ body {
 }
 
 .job-descript-icon{
-  border: .5px solid grey;
-  border-radius: 50%;
+
   text-align: center;
 }
 
@@ -359,7 +358,7 @@ body {
   justify-content: space-between;
 }
 
-.bargraph-numbers {
+/*.bargraph-numbers {
   position: relative;
   left: 48%;
   bottom: 172%;
@@ -367,8 +366,8 @@ body {
   flex-direction: column;
   height: 200px;
   width: 100px;
-}
-
+}*/
+/*
 .bargraph-days {
   display: flex;
   width: 460px;
@@ -376,7 +375,7 @@ body {
   left: 57%;
   bottom: 270%;
   justify-content: space-between;
-}
+}*/
 
 .horizontal-rule {
   position: relative;
@@ -482,6 +481,7 @@ body {
 .job-card-div {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid grey;
 }
 
 .job-card-div h5 {
@@ -511,13 +511,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.media-aside img {
+/*.media-aside img {
   grid-column: 2;
   margin-right: 40px;
   width: 100%;
   border-radius: 4px;
   height: 50px;
-}
+}*/
 
 .media-aside input {
   width: 87%;
@@ -606,15 +606,15 @@ body {
     bottom: 150%;
   }
 
-  .bargraph-days {
+/*  .bargraph-days {
     position: relative;
     bottom: 83%;
-  }
-
+  }*/
+/*
   .bargraph-numbers {
     position: relative;
     bottom: 57%;
-  }
+  }*/
 
 }
 
@@ -674,7 +674,17 @@ body {
   }
 }
 
+@media screen and (min-width: 415px){
+  .summary-hamburger{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 414px){
+
+  .media-aside{
+    width: 90%;
+  }
 
   .bullet{
     display: none;
@@ -693,7 +703,8 @@ body {
 }
 
 #bargraph{
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .grid-header-list{
@@ -769,7 +780,7 @@ body {
   }
 
 .summary-hamburger{
-  padding-right: 15%;
+  padding-right: 8%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -793,9 +804,17 @@ body {
   .job-descript-icons{
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     padding-top: 4%;
+    width: 100%;
+    color: grey;
 /*    padding-right: 8em;
 */}
+
+.job-descript-icon{
+  font-size: 2em;
+  display: flex;
+}
 
   .open-button{
     width: 50%;
@@ -818,14 +837,135 @@ body {
     padding-bottom: 3%;
   }
 
+  .bargraph-days{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 5% auto;
+  position: relative;
+  bottom: 80%;
 }
 
+.bargraph-numbers{
+  position: relative;
+  bottom: 150%;
+}
 
-@media screen and (max-width: 320px){
+.search-menu {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 0fr 0fr;
+  grid-area: searchmenu;
+  height: 65px;
+  border-bottom: .5px solid #c6c9ce;
+  width: 100vw;
+}
+
+.search-hamburger{
+  grid-column: 1;
+}
+
+.search-menu{
+  grid-row: auto;
+}
+
+.search-bar{
+  grid-column: 2;
+}
+
+.search-bar input{
+  width: 100%;
+}
+.search-button{
+  grid-column: 3;
+}
+
+.search-calendar{
+  grid-column: 1/-1;
+
+}
+
+.search-options{
+  grid-column: 1/-1;
+}
+
+.fa-calendar-plus:before, .fa-th:before{
+  display: none;
+
+}
+
+img.left-arrow{
+  height: 20px;
+  width: 20px;
+}
+
+}
+
+ .bargraph-days{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 5% auto;
+}
+
+@media screen and (min-width: 415px) and (max-width: 1242px){
+
+  .side-menu{
+    display: none;
+  }
+
+  .main-section{
+    grid-column: 1/3;
+  }
 
   .graphs{
-    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
   }
+
+  .job-card{
+    grid-column: 1/3;
+    width: 90%;
+
+  }
+
+  .media-aside{
+    grid-row: 2;
+    grid-column: 1/3;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+
+  }
+
+  .media-icons {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .media-icons img{
+    width: 150px;
+    height: 50px;
+  }
+
+  .media-aside-section{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .copy-link, .upload-resume{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
 }
 /*media screen and and (max-width: 1441px){
   .graph-section {
