@@ -682,6 +682,8 @@ body {
   .pie-div, .bar-graph-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 108%;
   }
 
   .fa-user-plus:before, .fa-calendar-plus:before, .fa-th:before, .fa-bars:before{
@@ -732,7 +734,7 @@ body {
   }
 
 .graphs{
-  width: 100%;
+  width: 105%;
   display: flex;
   justify-content: space-between;
   margin-left: 5%;
@@ -784,6 +786,13 @@ body {
 
   .job-header{
     margin-left: 2%;
+  }
+
+   .pie-div, .bar-graph-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 108%;
   }
 
   .job-descript-icons{
