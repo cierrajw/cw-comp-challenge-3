@@ -247,7 +247,6 @@ body {
 .job-header-title {
   font-size: 2rem;
   color: #5e6063;
-  margin-bottom: 0;
  }
 
 .grid-title-section {
@@ -628,14 +627,11 @@ body {
 
   .bargraph-days{
     display: flex;
-    /*width: 200px;*/
     justify-content: space-between;
     position: relative;
-/*    width: 300px;
-*/   right: 50%;
+    right: 50%;
     top: 140px;
-/*    width: 300px;
-*/  }
+   }
 
   .pie-div .pie{
     display: flex;
@@ -645,8 +641,7 @@ body {
   .bargraph-days ul{
     width: 300px;
     display: flex;
-/*    width: 120%;
-*/    justify-content: space-between;
+    justify-content: space-between;
   }
 
   .bargraph-numbers{
@@ -882,6 +877,14 @@ body {
     text-align: center;
     width: 90%;
   }
+
+.search-calendar, .search-options{
+  grid-row: 1/-1;
+}
+
+.search-bar input{
+  font-size: 1em;
+}
 
 
 .main-content {
