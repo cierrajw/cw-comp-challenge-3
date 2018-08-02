@@ -4,17 +4,11 @@
   <title></title>
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
-
   <link rel="stylesheet" type="text/css" href="doughnutgraphs.css"/>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 
 </head>
@@ -26,94 +20,94 @@
 
 <!----------------------------------Side Menu-------------------------------->
   
-  <container class="aside-container">
-<aside role="menu" class="side-menu">
+  <section class="aside-container">
+    <aside role="menu" class="side-menu">
 
-  <section role="profile-image" class="profile-img-section">
-    <img src="/cw-comp-challenge-3/images/fairygirl.JPG">
-    <h3 class="profile-name">Cierra Washington <i class="fas fa-angle-down"></i></h3>
+    <section role="profile-image" class="profile-img-section">
+      <img src="/cw-comp-challenge-3/images/fairygirl.JPG">
+      <h3 class="profile-name">Cierra Washington <i class="fas fa-angle-down"></i></h3>
+    </section>
+      
+    <section role="main-menu" class="main-menu-section">
+      <h3 class="side-menu-header-text">Main</h3>
+      <p class="side-menu-text"><i class="fas fa-home side-menu-icons"></i> HOME</p>
+      <p class="side-menu-text"><i class="fas fa-user-md side-menu-icons"></i> JOBS</p>
+      <p class="side-menu-text"><i class="far fa-file side-menu-icons" > </i>RESUMES</p>
+      <p class="side-menu-text"><i class="fas fa-tasks side-menu-icons"></i> TASKS</p>
+      <p class="side-menu-text"><i class="fas fa-calendar-alt side-menu-icons"></i> CALENDAR</p>
+    </section>
+
+    <section role="admin" class="admin-section">
+      <h3 class="side-menu-header-text">Admin</h3>
+
+      <p class="side-menu-text"><i class="fas fa-users side-menu-icons"></i>USERS</p>
+      <p class="side-menu-text"><i class="fas fa-thumbtack side-menu-icons"></i> LOCATIONS</p>
+      <p class="side-menu-text"><i class="fas fa-briefcase side-menu-icons"></i> WORKFLOWS</p>
+      <p class="side-menu-text"><i class="fas fa-chalkboard side-menu-icons"></i> JOB BOARDS</p>
+      <p class="side-menu-text"><i class="fab fa-twitter side-menu-icons"></i> SOCIAL</p>
+    </section>
+
+    <section role="categories" class="categories-section">
+    <h3 class="side-menu-header-text">Categories</h3>
+    <p class="side-menu-text"><i class="fas fa-check-square side-menu-icons"></i> Administrative</p>
+    <p class="side-menu-text"><i class="fas fa-square square2 side-menu-icons"></i> Design</p>
+    <p class="side-menu-text"><i class="fas fa-square square3 side-menu-icons"></i> Executive</p>
+    <p class="side-menu-text"><i class="fas fa-square square4 side-menu-icons"></i> Human Resources</p>
+    </section>
+
+    </aside>
   </section>
-
-  <section role="main-menu" class="main-menu-section">
-    <h3 class="side-menu-header-text">Main</h3>
-    <p class="side-menu-text"><i class="fas fa-home side-menu-icons"></i> HOME</p>
-    <p class="side-menu-text"><i class="fas fa-user-md side-menu-icons"></i> JOBS</p>
-    <p class="side-menu-text"><i class="far fa-file side-menu-icons" > </i>RESUMES</p>
-    <p class="side-menu-text"><i class="fas fa-tasks side-menu-icons"></i> TASKS</p>
-    <p class="side-menu-text"><i class="fas fa-calendar-alt side-menu-icons"></i> CALENDAR</p>
-  </section>
-
-  <section role="admin" class="admin-section">
-    <h3 class="side-menu-header-text">Admin</h3>
-
-    <p class="side-menu-text"><i class="fas fa-users side-menu-icons"></i>USERS</p>
-    <p class="side-menu-text"><i class="fas fa-thumbtack side-menu-icons"></i> LOCATIONS</p>
-    <p class="side-menu-text"><i class="fas fa-briefcase side-menu-icons"></i> WORKFLOWS</p>
-    <p class="side-menu-text"><i class="fas fa-chalkboard side-menu-icons"></i> JOB BOARDS</p>
-    <p class="side-menu-text"><i class="fab fa-twitter side-menu-icons"></i> SOCIAL</p>
-  </section>
-
-  <section role="categories" class="categories-section">
-  <h3 class="side-menu-header-text">Categories</h3>
-  <p class="side-menu-text"><i class="fas fa-check-square side-menu-icons"></i> Administrative</p>
-  <p class="side-menu-text"><i class="fas fa-square square2 side-menu-icons"></i> Design</p>
-  <p class="side-menu-text"><i class="fas fa-square square3 side-menu-icons"></i> Executive</p>
-  <p class="side-menu-text"><i class="fas fa-square square4 side-menu-icons"></i> Human Resources</p>
-  </section>
-
-</aside>
-</container>
 
 <!----------------------------------Main Content Section-------------------------------->
 
 <main role="main-section" class="main-section">
 
-  <container role="main-content" class="main-nested">
+  <section role="main-content" class="main-nested">
 
 <!----------------------------------Search bar-------------------------------->
-  
+    
     <header class="search-menu">
       <section class="search-hamburger flex-center-search-items button-hover"><i class="fas fa-caret-left"></i> <i class="fas fa-bars"></i>
       </section>
-
 
       <section role="search" class="search-bar">
         <input aria-label="search-bar" class="the-search-bar" type="text" name="SearchMenu" placeholder="Search for a job, task, or resume">
       </section>
 
-      <section class="search-button flex-center-search-items button-hover"><i class="fas fa-user-plus"></i></section>
+      <section class="search-button flex-center-search-items button-hover"><i class="fas fa-user-plus search-icon"></i></section>
 
-      <section class="search-calendar flex-center-search-items button-hover"><i class="far fa-calendar-plus"></i></section>
+      <section class="search-calendar flex-center-search-items button-hover"><i class="far fa-calendar-plus search-icon"></i></section>
 
-      <section class="search-options flex-center-search-items button-hover"><i class="fas fa-th"></i></section>
+      <section class="search-options flex-center-search-items button-hover"><i class="fas fa-th search-icon"></i></section>
 
 
     </header>
 
 <!----------------------------------Job Description Title/Header-------------------------------->
-    <container role="job-description" class="job-description">
+  <section role="job-description" class="job-description">
+    <section role="job-header" class="job-header">
+      <h3 class="job-header-title align-job-header">Front-end Software Developer</h3>
+      <h4 class="job-sub-header candidate-location align-job-header"><i class="fas fa-map-marker-alt"></i> San Fransisco, CA</h4>
+      <h4 class="job-sub-header job-sub-header2"><span class="bullet">&bull;</span> <span class="previewpost align-job-header">Preview this post</span></h4>
 
-
-      <section role="job-header" class="job-header">
-        <h3 class="job-header-title align-job-header">Front-end Software Developer</h3>
-        <h4 class="job-sub-header candidate-location align-job-header"><i class="fas fa-map-marker-alt"></i> San Fransisco, CA</h4>
-        <h4 class="job-sub-header job-sub-header2"><span class="bullet">&bull;</span> <span class="previewpost">Preview this post</span></h4>
-
-        <div class="job-description-options">
+      <div class="job-description-options">
         <button class="open-button"><span class="open-bullet">&bull;</span>Open</button>
         <span class="job-descript-icons">
-        <i class="fas fa-bookmark"></i>
-        <i class="far fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        </span>
-        </div>
-
+        <div><i class="fas fa-bookmark job-descript-icon"></i></div>
+        <div><i class="far fa-edit job-descript-icon"></i></div>
+        <div><i class="fas fa-trash-alt job-descript-icon"></i></div>
+      </span>
+      </div>
 
       </section>
     
 <!----------------------------------Graph image header titles-------------------------------->
 
       <section role="graphs" class="grid-title-section">
+
+        <article class="summary-hamburger"><img class="left-arrow" src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/left-arrow-angle.svg"><img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/menu.svg"></article>
+
+ 
 
         <div class="graph-header-list mobile-menu">
         <h5 class="summary-menu">SUMMARY</h5>
@@ -126,82 +120,92 @@
         </div>
 
       </section>
-      <div class="graph-section-hover"></div>
-
-    </container>
-
-<!----------------------------------Canvas-------------------------------->
+<!--       <div class="graph-section-hover"></div>
+ -->
+    </section>
 
     <section role="graph-section" class="graph-section">
-      <hr class="horizontal-rule">
-      <div class="hrdivider"><i class="fas fa-angle-up"></i></div>
+ <!--      <hr class="horizontal-rule">
+      <div class="hrdivider"><i class="fas fa-angle-up"></i></div> -->
 
-<!----------------------------------Doughnut Graph-------------------------------->
+      <!----------------------------------Doughnut Graph-------------------------------->
+      <section class="graphs">
+<!--         <section>
+
+ -->
+        <section class="flex-pie-graph">
+
+          <section class="pie-div">
+            <progress class="pie" value="3,154 Applicants" style="--progress:90"></progress>
+
+            <progress class="pie" value="1,546 Shares" max="100" style="--progress:60"></progress>
+
+            <progress class="pie" value="912 Views" style="--progress:25"></progress>
 
 
-       <div class="pie-img-div"></div>
+          </section>
 
-      <div class="pie-div">
-        <progress class="pie" value="3,154" style="--progress:90"></progress>
-
-        <progress class="pie" value="1,546" max="100" style="--progress:60"></progress>
-
-        <progress class="pie" value="912" style="--progress:25"></progress>
-      </div>
-
-<!----------------------------------Div For Graph Images-------------------------------->
-      <section class="graph-imgs-div">
-
-         <div class="pie-img-div">
-          
-          <img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/donutgraphscreenshot.png" width="500" height="400">
-        </div>
-
-        <div class="bargraph-img-div">
-          
-          <img src="/Users/Cierra/Documents/Turing Projects/static-comp-3/images/bargraphscreenshot.png" width="350" height="400">
-        </div> 
+        <button class="chart-buttons chart-button-1">TOTALS &bull; out of 5,432 views</button>
 
       </section>
 
-      <p class="chart-buttons chart-button-1">TOTALS &bull; out of 5,432 views</p>
- 
+<!--         <section class="buttons-for-chart">
+ -->
+          
+
+
+<!--         </section>      
+ --> 
+ <!----------------------------------Canvas-------------------------------->
+
       
 <!----------------------------------Bar Graph-------------------------------->
 
-       <p class="chart-buttons chart-button-2">APPLICANTS/DAY</p>
+      <section class="flex-bar-graph">
+        <article class="bar-graph-container"><canvas id="bargraph"></canvas>
 
-       <div class="bargraph-numbers" tooltip=”tooltip content here” tooltip-position=”left”>
-         
-         <h6 class="bargraph-numbers">500</h6>
-         <h6 class="bargraph-numbers">400</h6>
-         <h6 class="bargraph-numbers">300</h6>
-         <h6 class="bargraph-numbers">200</h6>
-         <h6 class="bargraph-numbers">100</h6>
+          <div class="bargraph-days">
 
-       </div>
+            <ul>
+              <li>S</li>
+              <li>M</li>
+              <li>T</li>
+              <li>W</li>
+              <li>T</li>
+              <li>F</li>
+              <li>S</li>
+              <li>S</li>
+              <li>M</li>
+              <li>T</li>
+              <li>W</li>
+              <li>T</li>
+            </ul>
 
-       <div class="bargraph-days">
-          <h6>S</h6>
-          <h6>M</h6>
-          <h6>T</h6>
-          <h6>W</h6>
-          <h6>T</h6>
-          <h6>F</h6>
-          <h6>S</h6>
-          <h6>S</h6>
-          <h6>M</h6>
-          <h6>T</h6>
-          <h6>W</h6>
-          <h6>T</h6>
-       </div>
+            
+         </div>
 
-      <div class="bar-graph-container"><canvas id="bargraph" height="200" width="300"></div>
+          <div class="bargraph-numbers" tooltip=”tooltip content here” tooltip-position=”left”>
+           
+           <h6 class="bargraph-numbers">500</h6>
+           <h6 class="bargraph-numbers">400</h6>
+           <h6 class="bargraph-numbers">300</h6>
+           <h6 class="bargraph-numbers">200</h6>
+           <h6 class="bargraph-numbers">100</h6>
+
+         </div>
+
+
+        </article>
+
+        <p class="chart-buttons chart-button-2">APPLICANTS/DAY</p>
+
+      </section>
+
+      </section>
         
     </section>
 
     <main class="main-content">
-
 
 <!----------------------------------Job card -------------------------------->
       <article role="job-card" class="job-card">
@@ -233,7 +237,7 @@
             <p>Open</p>
           </div>
           <div class="job-card-div">
-            <h5 class="job-card-div">DESCRIPTION</h5>
+            <h5>DESCRIPTION</h5>
             <p> developers developers  developers  developers  developers  developers  developers  developers  developers  developers   </p>
           </div>
           <div class="job-card-div">
@@ -255,9 +259,9 @@
       <aside role="social-media" class="media-aside">
         <section class="media-icons">
           
-          <img class="facebook" src="/cw-comp-challenge-3/images/facebooklink.PNG">
-          <img class="twitter" src="/cw-comp-challenge-3/images/twitterlink.PNG">
-          <img class="linkedin" src="/cw-comp-challenge-3/images/linkedinlink.PNG">
+          <img src="/cw-comp-challenge-3/images/facebooklink.PNG">
+          <img src="/cw-comp-challenge-3/images/twitterlink.PNG">
+          <img src="/cw-comp-challenge-3/images/linkedinlink.PNG">
 
         </section>
 
@@ -288,12 +292,8 @@
 
     </main>
 
-    </section>
-
-  </container>
 
 </main>
-
 
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="./jquery/jquery-3.2.1.js"></script>

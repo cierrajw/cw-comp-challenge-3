@@ -5,46 +5,6 @@ $('.search-hamburger').on('click', hamburgerMenuClick);
 
 var gridTitleSection = $('.grid-title-section');
 
-
-$(window).resize(resizeMenu)
-         .trigger('resize');
-
-
-$(window).on('resize', resizeMenu);
-
-
-//Functions
-
-function resizeMenu(){
-
-      var mobilemenu = $('.mobile-menu');
-      var jobDescript = $('.job-description');
-      var graphSection = $('.graph-section');
-      var toggleNav = $('.toggle-nav');
-      var graphHeader = $('.summary-menu');
-   
-         if($(window).width() <= 414){
-
-                  graphSection.hide();
-
-                  console.log("added class on resize!");
-            }else if($(window).width() >= 414){
-
-                  toggleNav.children().hide();
-
-                   graphSection.show();
-
-
-                  console.log("screen is big again");
-
-            }   
-
-              if($(window).width() <= 1441){
-                  $('.graph-secton').detach();
-              }
-}
-
-
 function hamburgerMenuClick(){
   $('.side-menu').toggle();
   var mainContent = $('.main-nested');
@@ -95,3 +55,46 @@ function barGraph(){
       ctx2.fillRect(285, 120, 8, 300);
 
 }
+
+//Media Queries
+
+// $(window).resize(resizeMenu);
+
+// $(window).resize(resizeMenu)
+//          .trigger('resize');
+
+
+// $(window).on('resize', resizeMenu);
+
+
+// function resizeMenu(){
+
+//       var mobilemenu = $('.mobile-menu');
+//       var jobDescript = $('.job-description');
+//       var graphSection = $('.graph-section');
+//       var toggleNav = $('.toggle-nav');
+//       var graphHeader = $('.summary-menu');
+   
+//          if($(window).width() <= 414){
+
+//                   graphSection.hide();
+
+//                   console.log("added class on resize!");
+//             }else if($(window).width() >= 414){
+
+//                   toggleNav.children().hide();
+
+//                    graphSection.show();
+
+
+//                   console.log("screen is big again");
+
+//             }   
+
+//               if($(window).width() <= 1441){
+//                   $('.graph-secton').detach();
+//               }
+
+
+
+// }
