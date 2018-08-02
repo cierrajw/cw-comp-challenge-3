@@ -180,7 +180,7 @@ body {
 
 .search-bar input {
   grid-column: 2;
-  height: 93%;
+  height: 95%;
   width: 100%;
   font-size: 2em;
   background-image: url('/cw-comp-challenge-3/images/search1.SVG');
