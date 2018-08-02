@@ -63,9 +63,7 @@ body {
 }
 
 .profile-img-section img {
-  position: relative;
-  top: 2px;
-  left: 36px;
+  margin: 0 auto;
   border-radius: 50% 50%;
   border: 1px solid #16243a;
   height: 90px;
