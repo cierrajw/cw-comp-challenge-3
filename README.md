@@ -7,5 +7,3 @@ and I borrowed the doughnut graph from CodePen.
 
 ![Original](https://github.com/cierrajw/cw-comp-challenge-3/blob/master/images/static-comp-3-img.png)
 
-
-## My Comp:
