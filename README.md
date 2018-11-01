@@ -3,7 +3,7 @@ and I borrowed the doughnut graph from CodePen.
 
 <br>
 
-## Original Comp:
+## Comp:
 
 ![Original](https://github.com/cierrajw/cw-comp-challenge-3/blob/master/images/static-comp-3-img.png)
 
